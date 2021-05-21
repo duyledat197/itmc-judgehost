@@ -1,0 +1,111 @@
+<?php //%255B4e5ddab10deae02c6909a1aa3479acb1%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.submissions_restricted AS submissions_restricted_0, s0_.pending_restricted AS pending_restricted_1, s0_.is_correct_restricted AS is_correct_restricted_2, s0_.solvetime_restricted AS solvetime_restricted_3, s0_.submissions_public AS submissions_public_4, s0_.pending_public AS pending_public_5, s0_.is_correct_public AS is_correct_public_6, s0_.solvetime_public AS solvetime_public_7, s0_.is_first_to_solve AS is_first_to_solve_8, s0_.cid AS cid_9, s0_.teamid AS teamid_10, s0_.probid AS probid_11 FROM scorecache s0_ WHERE s0_.cid = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    's' => 'App\\Entity\\ScoreCache',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'submissions_restricted_0' => 'submissions_restricted',
+                    'pending_restricted_1' => 'pending_restricted',
+                    'is_correct_restricted_2' => 'is_correct_restricted',
+                    'solvetime_restricted_3' => 'solvetime_restricted',
+                    'submissions_public_4' => 'submissions_public',
+                    'pending_public_5' => 'pending_public',
+                    'is_correct_public_6' => 'is_correct_public',
+                    'solvetime_public_7' => 'solvetime_public',
+                    'is_first_to_solve_8' => 'is_first_to_solve',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'cid_9' => 'integer',
+                    'teamid_10' => 'integer',
+                    'probid_11' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    's' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_9' => 'cid',
+                    'teamid_10' => 'teamid',
+                    'probid_11' => 'probid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'submissions_restricted_0' => 's',
+                    'pending_restricted_1' => 's',
+                    'is_correct_restricted_2' => 's',
+                    'solvetime_restricted_3' => 's',
+                    'submissions_public_4' => 's',
+                    'pending_public_5' => 's',
+                    'is_correct_public_6' => 's',
+                    'solvetime_public_7' => 's',
+                    'is_first_to_solve_8' => 's',
+                    'cid_9' => 's',
+                    'teamid_10' => 's',
+                    'probid_11' => 's',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'submissions_restricted_0' => 'App\\Entity\\ScoreCache',
+                    'pending_restricted_1' => 'App\\Entity\\ScoreCache',
+                    'is_correct_restricted_2' => 'App\\Entity\\ScoreCache',
+                    'solvetime_restricted_3' => 'App\\Entity\\ScoreCache',
+                    'submissions_public_4' => 'App\\Entity\\ScoreCache',
+                    'pending_public_5' => 'App\\Entity\\ScoreCache',
+                    'is_correct_public_6' => 'App\\Entity\\ScoreCache',
+                    'solvetime_public_7' => 'App\\Entity\\ScoreCache',
+                    'is_first_to_solve_8' => 'App\\Entity\\ScoreCache',
+                ],
+            ],
+            'isIdentifierColumn' => [
+                2 => [
+                    's' => [
+                        'cid_9' => true,
+                        'teamid_10' => true,
+                        'probid_11' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

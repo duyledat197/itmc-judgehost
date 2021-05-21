@@ -1,0 +1,13 @@
+<?php //%255BApp%255CHelpers%255CJudgingWrapper%2524maxRunTime%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+    ],
+    null,
+    [],
+    [
+        $o[0],
+    ],
+    []
+); }];

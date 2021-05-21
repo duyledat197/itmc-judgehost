@@ -1,0 +1,48 @@
+<?php //%255B953b7f60a6d0951d415ee12a3db67d91%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.teamid AS teamid_0, u1_.last_ip_address AS last_ip_address_1, u1_.first_login AS first_login_2 FROM team t0_ LEFT JOIN user u1_ ON t0_.teamid = u1_.teamid GROUP BY t0_.teamid, u1_.last_ip_address, u1_.first_login',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'teamid_0' => 'teamid',
+                    'last_ip_address_1' => 'last_ip_address',
+                    'first_login_2' => 'first_login',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'teamid_0' => 'integer',
+                    'last_ip_address_1' => 'string',
+                    'first_login_2' => 'decimal',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'scalars' => 'teamid_0',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

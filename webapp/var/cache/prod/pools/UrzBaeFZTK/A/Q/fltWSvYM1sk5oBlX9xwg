@@ -1,0 +1,101 @@
+<?php //%255Bca6fbf144912b13f3892723142a6dd6b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'hostname' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT j0_.hostname AS hostname_0, j0_.active AS active_1, j0_.polltime AS polltime_2, j0_.restrictionid AS restrictionid_3, j1_.restrictionid AS restrictionid_4, j1_.name AS name_5, j1_.restrictions AS restrictions_6, j0_.restrictionid AS restrictionid_7 FROM judgehost j0_ LEFT JOIN judgehost_restriction j1_ ON j0_.restrictionid = j1_.restrictionid WHERE j0_.hostname = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'j' => 'App\\Entity\\Judgehost',
+                    'r' => 'App\\Entity\\JudgehostRestriction',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'r' => 'restriction',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'r' => 'j',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'hostname_0' => 'hostname',
+                    'active_1' => 'active',
+                    'polltime_2' => 'polltime',
+                    'restrictionid_3' => 'restrictionid',
+                    'restrictionid_4' => 'restrictionid',
+                    'name_5' => 'name',
+                    'restrictions_6' => 'restrictions',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'restrictionid_7' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'j' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'restrictionid_7' => 'restrictionid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'hostname_0' => 'j',
+                    'active_1' => 'j',
+                    'polltime_2' => 'j',
+                    'restrictionid_3' => 'j',
+                    'restrictionid_4' => 'r',
+                    'name_5' => 'r',
+                    'restrictions_6' => 'r',
+                    'restrictionid_7' => 'j',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'hostname_0' => 'App\\Entity\\Judgehost',
+                    'active_1' => 'App\\Entity\\Judgehost',
+                    'polltime_2' => 'App\\Entity\\Judgehost',
+                    'restrictionid_3' => 'App\\Entity\\Judgehost',
+                    'restrictionid_4' => 'App\\Entity\\JudgehostRestriction',
+                    'name_5' => 'App\\Entity\\JudgehostRestriction',
+                    'restrictions_6' => 'App\\Entity\\JudgehostRestriction',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

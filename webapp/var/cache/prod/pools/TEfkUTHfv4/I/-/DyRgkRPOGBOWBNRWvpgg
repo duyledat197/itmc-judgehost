@@ -1,0 +1,40 @@
+<?php //%255BApp%255CEntity%255CContest%2524freezetimeString%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+        clone ($p['App\\Validator\\Constraints\\TimeString'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\TimeString')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'freezetime_string',
+            ],
+            'length' => [
+                64,
+            ],
+            'nullable' => [
+                true,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Authoritative absolute or relative string representation of freezetime',
+                    'default' => 'NULL',
+                ],
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

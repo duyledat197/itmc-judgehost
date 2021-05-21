@@ -1,0 +1,101 @@
+<?php //%255Bbb0cf74b1fce37f7bc773bc46aacb21c%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.teamid AS teamid_0, t0_.icpcid AS icpcid_1, t0_.name AS name_2, t0_.display_name AS display_name_3, t0_.categoryid AS categoryid_4, t0_.affilid AS affilid_5, t0_.enabled AS enabled_6, t0_.members AS members_7, t0_.room AS room_8, t0_.comments AS comments_9, t0_.judging_last_started AS judging_last_started_10, t0_.penalty AS penalty_11, t0_.affilid AS affilid_12, t0_.categoryid AS categoryid_13 FROM team t0_',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'e' => 'App\\Entity\\Team',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'teamid_0' => 'teamid',
+                    'icpcid_1' => 'icpcid',
+                    'name_2' => 'name',
+                    'display_name_3' => 'display_name',
+                    'categoryid_4' => 'categoryid',
+                    'affilid_5' => 'affilid',
+                    'enabled_6' => 'enabled',
+                    'members_7' => 'members',
+                    'room_8' => 'room',
+                    'comments_9' => 'comments',
+                    'judging_last_started_10' => 'judging_last_started',
+                    'penalty_11' => 'penalty',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'affilid_12' => 'integer',
+                    'categoryid_13' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'e' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'affilid_12' => 'affilid',
+                    'categoryid_13' => 'categoryid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'teamid_0' => 'e',
+                    'icpcid_1' => 'e',
+                    'name_2' => 'e',
+                    'display_name_3' => 'e',
+                    'categoryid_4' => 'e',
+                    'affilid_5' => 'e',
+                    'enabled_6' => 'e',
+                    'members_7' => 'e',
+                    'room_8' => 'e',
+                    'comments_9' => 'e',
+                    'judging_last_started_10' => 'e',
+                    'penalty_11' => 'e',
+                    'affilid_12' => 'e',
+                    'categoryid_13' => 'e',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'teamid_0' => 'App\\Entity\\Team',
+                    'icpcid_1' => 'App\\Entity\\Team',
+                    'name_2' => 'App\\Entity\\Team',
+                    'display_name_3' => 'App\\Entity\\Team',
+                    'categoryid_4' => 'App\\Entity\\Team',
+                    'affilid_5' => 'App\\Entity\\Team',
+                    'enabled_6' => 'App\\Entity\\Team',
+                    'members_7' => 'App\\Entity\\Team',
+                    'room_8' => 'App\\Entity\\Team',
+                    'comments_9' => 'App\\Entity\\Team',
+                    'judging_last_started_10' => 'App\\Entity\\Team',
+                    'penalty_11' => 'App\\Entity\\Team',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

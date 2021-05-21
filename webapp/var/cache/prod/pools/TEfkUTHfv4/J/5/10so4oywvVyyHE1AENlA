@@ -1,0 +1,118 @@
+<?php //%255BApp%255CEntity%255CSubmission%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone ($p['Doctrine\\ORM\\Mapping\\UniqueConstraint'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\UniqueConstraint')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'submission',
+                'teamid',
+                'judgehost',
+                'teamid_2',
+                'probid',
+                'langid',
+                'judgehost_2',
+                'origsubmitid',
+                'rejudgingid',
+                'probid_2',
+                'externalid',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                    $o[3],
+                    $o[4],
+                    $o[5],
+                    $o[6],
+                    $o[7],
+                    $o[8],
+                    $o[9],
+                    $o[10],
+                ],
+            ],
+            'uniqueConstraints' => [
+                1 => [
+                    $o[11],
+                ],
+            ],
+            'options' => [
+                1 => [
+                    'collate' => 'utf8mb4_unicode_ci',
+                    'charset' => 'utf8mb4',
+                    'comment' => 'All incoming submissions',
+                ],
+                11 => [
+                    'lengths' => [
+                        null,
+                        '190',
+                    ],
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'cid',
+                    'teamid',
+                ],
+                [
+                    'cid',
+                    'judgehost',
+                ],
+                [
+                    'teamid',
+                ],
+                [
+                    'probid',
+                ],
+                [
+                    'langid',
+                ],
+                [
+                    'judgehost',
+                ],
+                [
+                    'origsubmitid',
+                ],
+                [
+                    'rejudgingid',
+                ],
+                [
+                    'cid',
+                    'probid',
+                ],
+                [
+                    'cid',
+                    'externalid',
+                ],
+            ],
+            'fields' => [
+                12 => 'externalid',
+            ],
+            'groups' => [
+                12 => [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[12],
+    ],
+    []
+); }];

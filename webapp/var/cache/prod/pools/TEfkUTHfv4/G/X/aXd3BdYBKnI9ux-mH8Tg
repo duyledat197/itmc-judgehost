@@ -1,0 +1,33 @@
+<?php //%255BApp%255CEntity%255CProblem%2524special_compare%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'special_compare',
+            ],
+            'length' => [
+                32,
+            ],
+            'nullable' => [
+                true,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Script to compare problem and jury output for this problem',
+                    'default' => 'NULL',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

@@ -1,0 +1,103 @@
+<?php //%255BApp%255CController%255CAPI%255CJudgehostController%2523updateJudgingAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Put')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/update-judging/{hostname}/{judgingId<\\d+>}',
+            ],
+            'methods' => [
+                [
+                    'PUT',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_JUDGEHOST',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'When the judging has been updated',
+                4 => 'The hostname of the judgehost that wants to update the judging',
+                6 => 'The ID of the judging to update',
+            ],
+            '_context' => [
+                2 => $o[3],
+                4 => $o[5],
+                6 => $o[7],
+            ],
+            'filename' => [
+                3 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 827,
+                5 => 827,
+                7 => 827,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                5 => 'Annotation',
+                7 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                5 => 'DocParser',
+                7 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                5 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                5 => [
+                    $o[4],
+                ],
+                7 => [
+                    $o[6],
+                ],
+            ],
+            'name' => [
+                4 => 'hostname',
+                6 => 'judgingId',
+            ],
+            'in' => [
+                4 => 'path',
+                6 => 'path',
+            ],
+            'type' => [
+                4 => 'string',
+                6 => 'integer',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[4],
+        $o[6],
+    ],
+    []
+); }];

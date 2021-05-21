@@ -1,0 +1,162 @@
+<?php //%255BApp%255CEntity%255CTestcaseContent%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\TestcaseContent',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\TestcaseContent',
+            ],
+            'identifier' => [
+                [
+                    'testcase',
+                ],
+            ],
+            'fieldMappings' => [
+                [
+                    'input' => [
+                        'fieldName' => 'input',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Input data',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'input',
+                    ],
+                    'output' => [
+                        'fieldName' => 'output',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Output data',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'output',
+                    ],
+                    'image' => [
+                        'fieldName' => 'image',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'A graphical representation of the testcase',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'image',
+                    ],
+                    'image_thumb' => [
+                        'fieldName' => 'image_thumb',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Automatically created thumbnail of the image',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'image_thumb',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'input' => 'input',
+                    'output' => 'output',
+                    'image' => 'image',
+                    'image_thumb' => 'image_thumb',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'input' => 'input',
+                    'output' => 'output',
+                    'image' => 'image',
+                    'image_thumb' => 'image_thumb',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'testcase_content',
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Stores contents of testcase',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'testcase' => [
+                        'fieldName' => 'testcase',
+                        'id' => true,
+                        'joinColumns' => [
+                            [
+                                'name' => 'testcaseid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'testcaseid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'content',
+                        'targetEntity' => 'App\\Entity\\Testcase',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\TestcaseContent',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'containsForeignIdentifier' => [
+                true,
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

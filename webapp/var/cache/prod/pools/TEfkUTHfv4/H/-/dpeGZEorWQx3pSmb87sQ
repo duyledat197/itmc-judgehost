@@ -1,0 +1,32 @@
+<?php //%255BApp%255CEntity%255CScoreCache%2524pending_restricted%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'pending_restricted',
+            ],
+            'type' => [
+                'integer',
+            ],
+            'length' => [
+                4,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Number of submissions pending judgement (restricted audience)',
+                    'unsigned' => true,
+                    'default' => '0',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

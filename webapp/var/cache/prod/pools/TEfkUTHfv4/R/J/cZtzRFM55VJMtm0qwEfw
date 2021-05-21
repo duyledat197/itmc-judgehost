@@ -1,0 +1,40 @@
+<?php //%255BApp%255CEntity%255CJudgehost%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'judgehost',
+                'restrictionid',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'options' => [
+                1 => [
+                    'collate' => 'utf8mb4_unicode_ci',
+                    'charset' => 'utf8mb4',
+                    'comment' => 'Hostnames of the autojudgers',
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'restrictionid',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

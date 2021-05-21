@@ -1,0 +1,48 @@
+<?php //%255B0997e6da29f1d99ae8ca0a330446fd44%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT p0_.probid AS probid_0, count(t1_.testcaseid) AS sclr_1 FROM contest c2_ INNER JOIN contestproblem c3_ ON c2_.cid = c3_.cid INNER JOIN problem p0_ ON c3_.probid = p0_.probid LEFT JOIN testcase t1_ ON p0_.probid = t1_.probid WHERE c2_.cid = ? GROUP BY p0_.probid',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'probid_0' => 'probid',
+                    'sclr_1' => 'num_testcases',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'probid_0' => 'integer',
+                    'sclr_1' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

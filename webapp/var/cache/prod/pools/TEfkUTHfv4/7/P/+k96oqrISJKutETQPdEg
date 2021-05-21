@@ -1,0 +1,24 @@
+<?php //%255BApp%255CHelpers%255CJudgingWrapper%2523getMaxRunTime%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['JMS\\Serializer\\Annotation\\VirtualProperty'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\VirtualProperty')),
+        clone ($p['JMS\\Serializer\\Annotation\\SerializedName'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\SerializedName')),
+        clone ($p['JMS\\Serializer\\Annotation\\Type'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Type')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'max_run_time',
+                'float',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

@@ -1,0 +1,48 @@
+<?php //%255B9656ad9a82d4c3f9aec8740d6ad18b19%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.teamid AS teamid_0, count(s0_.teamid) AS sclr_1 FROM submission s0_ INNER JOIN team t1_ ON s0_.teamid = t1_.teamid INNER JOIN team_category t2_ ON t1_.categoryid = t2_.categoryid WHERE s0_.cid = ? AND t2_.visible = 0 GROUP BY s0_.teamid',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'teamid_0' => 'teamid',
+                    'sclr_1' => 'num_submissions',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'teamid_0' => 'integer',
+                    'sclr_1' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

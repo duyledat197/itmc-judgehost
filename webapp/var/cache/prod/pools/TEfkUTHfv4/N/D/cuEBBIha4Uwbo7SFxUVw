@@ -1,0 +1,51 @@
+<?php //%255BApp%255CEntity%255CLanguage%2524langid%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Id'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Id')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotEqualTo'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotEqualTo')),
+        clone ($p['App\\Validator\\Constraints\\Identifier'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\Identifier')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'langid',
+            ],
+            'length' => [
+                1 => 32,
+            ],
+            'options' => [
+                1 => [
+                    'comment' => 'Language ID (string)',
+                ],
+            ],
+            'groups' => [
+                3 => [
+                    'Default',
+                ],
+                [
+                    'Default',
+                ],
+                [
+                    'Default',
+                ],
+            ],
+            'value' => [
+                4 => 'add',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[4],
+        $o[5],
+    ],
+    []
+); }];

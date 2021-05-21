@@ -1,0 +1,153 @@
+<?php //%255BApp%255CEntity%255CBalloon%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Balloon',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Balloon',
+            ],
+            'identifier' => [
+                [
+                    'balloonid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'balloonid' => [
+                        'fieldName' => 'balloonid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Balloon ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'balloonid',
+                        'id' => true,
+                    ],
+                    'submitid' => [
+                        'fieldName' => 'submitid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Submission for which balloon was earned',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'submitid',
+                    ],
+                    'done' => [
+                        'fieldName' => 'done',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Has been handed out yet?',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'done',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'balloonid' => 'balloonid',
+                    'submitid' => 'submitid',
+                    'done' => 'done',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'balloonid' => 'balloonid',
+                    'submitid' => 'submitid',
+                    'done' => 'done',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'balloon',
+                    'indexes' => [
+                        'submitid' => [
+                            'columns' => [
+                                'submitid',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Balloons to be handed out',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'submission' => [
+                        'fieldName' => 'submission',
+                        'joinColumns' => [
+                            [
+                                'name' => 'submitid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'submitid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'balloons',
+                        'targetEntity' => 'App\\Entity\\Submission',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Balloon',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'submitid' => 'submitid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'submitid' => 'submitid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'submitid' => 'submitid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

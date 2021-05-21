@@ -1,0 +1,84 @@
+<?php //%255B18882eba7987c5feab8b46ccaf9e900b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'submission' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.submitfileid AS submitfileid_0, s0_.submitid AS submitid_1, s0_.filename AS filename_2, s0_.rank AS rank_3, s0_.sourcecode AS sourcecode_4, s0_.submitid AS submitid_5 FROM submission_file s0_ WHERE s0_.submitid = ? ORDER BY s0_.rank ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'file' => 'App\\Entity\\SubmissionFile',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'submitfileid_0' => 'submitfileid',
+                    'submitid_1' => 'submitid',
+                    'filename_2' => 'filename',
+                    'rank_3' => 'rank',
+                    'sourcecode_4' => 'sourcecode',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'submitid_5' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'file' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'submitid_5' => 'submitid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'submitfileid_0' => 'file',
+                    'submitid_1' => 'file',
+                    'filename_2' => 'file',
+                    'rank_3' => 'file',
+                    'sourcecode_4' => 'file',
+                    'submitid_5' => 'file',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'submitfileid_0' => 'App\\Entity\\SubmissionFile',
+                    'submitid_1' => 'App\\Entity\\SubmissionFile',
+                    'filename_2' => 'App\\Entity\\SubmissionFile',
+                    'rank_3' => 'App\\Entity\\SubmissionFile',
+                    'sourcecode_4' => 'App\\Entity\\SubmissionFile',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

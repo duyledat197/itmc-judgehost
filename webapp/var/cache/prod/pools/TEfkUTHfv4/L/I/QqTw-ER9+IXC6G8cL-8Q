@@ -1,0 +1,35 @@
+<?php //%255BApp%255CEntity%255CRejudging%2524userid_start%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'userid_start',
+            ],
+            'type' => [
+                'integer',
+            ],
+            'length' => [
+                4,
+            ],
+            'nullable' => [
+                true,
+            ],
+            'options' => [
+                [
+                    'comment' => 'User ID of user who started the rejudge',
+                    'unsigned' => true,
+                    'default' => 'NULL',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

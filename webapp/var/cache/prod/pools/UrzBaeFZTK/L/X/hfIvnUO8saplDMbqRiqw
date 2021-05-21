@@ -1,0 +1,137 @@
+<?php //%255Bc603a6a29572b5f3c1d48bc18ebde68b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'judging' => [
+                        0,
+                    ],
+                    'problem' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.testcaseid AS testcaseid_0, t0_.md5sum_input AS md5sum_input_1, t0_.md5sum_output AS md5sum_output_2, t0_.probid AS probid_3, t0_.rank AS rank_4, t0_.description AS description_5, t0_.orig_input_filename AS orig_input_filename_6, t0_.image_type AS image_type_7, t0_.sample AS sample_8, t0_.deleted AS deleted_9, j1_.runid AS runid_10, j1_.judgingid AS judgingid_11, j1_.testcaseid AS testcaseid_12, j1_.runresult AS runresult_13, j1_.runtime AS runtime_14, j1_.endtime AS endtime_15, t0_.probid AS probid_16, j1_.judgingid AS judgingid_17, j1_.testcaseid AS testcaseid_18 FROM testcase t0_ LEFT JOIN judging_run j1_ ON t0_.testcaseid = j1_.testcaseid AND (j1_.judgingid = ?) WHERE t0_.probid = ? ORDER BY t0_.rank ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    't' => 'App\\Entity\\Testcase',
+                    'jr' => 'App\\Entity\\JudgingRun',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'jr' => 'judging_runs',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'jr' => 't',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'testcaseid_0' => 'testcaseid',
+                    'md5sum_input_1' => 'md5sum_input',
+                    'md5sum_output_2' => 'md5sum_output',
+                    'probid_3' => 'probid',
+                    'rank_4' => 'rank',
+                    'description_5' => 'description',
+                    'orig_input_filename_6' => 'orig_input_filename',
+                    'image_type_7' => 'image_type',
+                    'sample_8' => 'sample',
+                    'deleted_9' => 'deleted',
+                    'runid_10' => 'runid',
+                    'judgingid_11' => 'judgingid',
+                    'testcaseid_12' => 'testcaseid',
+                    'runresult_13' => 'runresult',
+                    'runtime_14' => 'runtime',
+                    'endtime_15' => 'endtime',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'probid_16' => 'integer',
+                    'judgingid_17' => 'integer',
+                    'testcaseid_18' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    't' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'probid_16' => 'probid',
+                    'judgingid_17' => 'judgingid',
+                    'testcaseid_18' => 'testcaseid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'testcaseid_0' => 't',
+                    'md5sum_input_1' => 't',
+                    'md5sum_output_2' => 't',
+                    'probid_3' => 't',
+                    'rank_4' => 't',
+                    'description_5' => 't',
+                    'orig_input_filename_6' => 't',
+                    'image_type_7' => 't',
+                    'sample_8' => 't',
+                    'deleted_9' => 't',
+                    'runid_10' => 'jr',
+                    'judgingid_11' => 'jr',
+                    'testcaseid_12' => 'jr',
+                    'runresult_13' => 'jr',
+                    'runtime_14' => 'jr',
+                    'endtime_15' => 'jr',
+                    'probid_16' => 't',
+                    'judgingid_17' => 'jr',
+                    'testcaseid_18' => 'jr',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'testcaseid_0' => 'App\\Entity\\Testcase',
+                    'md5sum_input_1' => 'App\\Entity\\Testcase',
+                    'md5sum_output_2' => 'App\\Entity\\Testcase',
+                    'probid_3' => 'App\\Entity\\Testcase',
+                    'rank_4' => 'App\\Entity\\Testcase',
+                    'description_5' => 'App\\Entity\\Testcase',
+                    'orig_input_filename_6' => 'App\\Entity\\Testcase',
+                    'image_type_7' => 'App\\Entity\\Testcase',
+                    'sample_8' => 'App\\Entity\\Testcase',
+                    'deleted_9' => 'App\\Entity\\Testcase',
+                    'runid_10' => 'App\\Entity\\JudgingRun',
+                    'judgingid_11' => 'App\\Entity\\JudgingRun',
+                    'testcaseid_12' => 'App\\Entity\\JudgingRun',
+                    'runresult_13' => 'App\\Entity\\JudgingRun',
+                    'runtime_14' => 'App\\Entity\\JudgingRun',
+                    'endtime_15' => 'App\\Entity\\JudgingRun',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

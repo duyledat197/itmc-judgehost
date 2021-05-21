@@ -1,0 +1,87 @@
+<?php //%255Bb2744533915eee62fa5f00f436ea941d%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT r0_.intervalid AS intervalid_0, r0_.cid AS cid_1, r0_.starttime AS starttime_2, r0_.endtime AS endtime_3, r0_.starttime_string AS starttime_string_4, r0_.endtime_string AS endtime_string_5, r0_.cid AS cid_6 FROM removed_interval r0_ WHERE r0_.cid = ? ORDER BY r0_.starttime ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'i' => 'App\\Entity\\RemovedInterval',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'intervalid_0' => 'intervalid',
+                    'cid_1' => 'cid',
+                    'starttime_2' => 'starttime',
+                    'endtime_3' => 'endtime',
+                    'starttime_string_4' => 'starttimeString',
+                    'endtime_string_5' => 'endtimeString',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'cid_6' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'i' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_6' => 'cid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'intervalid_0' => 'i',
+                    'cid_1' => 'i',
+                    'starttime_2' => 'i',
+                    'endtime_3' => 'i',
+                    'starttime_string_4' => 'i',
+                    'endtime_string_5' => 'i',
+                    'cid_6' => 'i',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'intervalid_0' => 'App\\Entity\\RemovedInterval',
+                    'cid_1' => 'App\\Entity\\RemovedInterval',
+                    'starttime_2' => 'App\\Entity\\RemovedInterval',
+                    'endtime_3' => 'App\\Entity\\RemovedInterval',
+                    'starttime_string_4' => 'App\\Entity\\RemovedInterval',
+                    'endtime_string_5' => 'App\\Entity\\RemovedInterval',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

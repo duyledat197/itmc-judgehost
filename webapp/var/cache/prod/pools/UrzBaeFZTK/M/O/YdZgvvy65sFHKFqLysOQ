@@ -1,0 +1,57 @@
+<?php //%255B239b28389d0942e478cbe94231faa23a%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                    'timediff' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.submitid AS submitid_0, MIN(j1_.judgingid) AS sclr_1, s0_.submittime AS submittime_2, MIN(j1_.starttime) - s0_.submittime AS sclr_3, COUNT(j1_.judgingid) AS sclr_4 FROM submission s0_ INNER JOIN judging j1_ ON (s0_.submitid = j1_.submitid) WHERE s0_.cid = ? GROUP BY s0_.submitid HAVING sclr_3 > ? ORDER BY sclr_3 DESC',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'submitid_0' => 'submitid',
+                    'sclr_1' => 'judgingid',
+                    'submittime_2' => 'submittime',
+                    'sclr_3' => 'timediff',
+                    'sclr_4' => 'num_judgings',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'submitid_0' => 'integer',
+                    'sclr_1' => 'string',
+                    'submittime_2' => 'decimal',
+                    'sclr_3' => 'string',
+                    'sclr_4' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

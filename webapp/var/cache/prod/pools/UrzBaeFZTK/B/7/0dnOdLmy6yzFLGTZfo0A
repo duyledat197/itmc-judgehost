@@ -1,0 +1,88 @@
+<?php //%255B9125aeb1f8cc4918f40b46b9a8c72bb9%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'id' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.input AS input_0, t0_.output AS output_1, t0_.image AS image_2, t0_.image_thumb AS image_thumb_3, t0_.testcaseid AS testcaseid_4 FROM testcase_content t0_ WHERE t0_.testcaseid = ? LIMIT 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'tcc' => 'App\\Entity\\TestcaseContent',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'input_0' => 'input',
+                    'output_1' => 'output',
+                    'image_2' => 'image',
+                    'image_thumb_3' => 'image_thumb',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'testcaseid_4' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'tcc' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'testcaseid_4' => 'testcaseid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'input_0' => 'tcc',
+                    'output_1' => 'tcc',
+                    'image_2' => 'tcc',
+                    'image_thumb_3' => 'tcc',
+                    'testcaseid_4' => 'tcc',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'input_0' => 'App\\Entity\\TestcaseContent',
+                    'output_1' => 'App\\Entity\\TestcaseContent',
+                    'image_2' => 'App\\Entity\\TestcaseContent',
+                    'image_thumb_3' => 'App\\Entity\\TestcaseContent',
+                ],
+            ],
+            'isIdentifierColumn' => [
+                2 => [
+                    'tcc' => [
+                        'testcaseid_4' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

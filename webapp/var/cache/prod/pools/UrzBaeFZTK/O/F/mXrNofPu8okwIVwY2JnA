@@ -1,0 +1,95 @@
+<?php //%255B999ba440393f82d38cc7d5cd5d391bdb%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                    'team' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT r0_.points_restricted AS points_restricted_0, r0_.totaltime_restricted AS totaltime_restricted_1, r0_.points_public AS points_public_2, r0_.totaltime_public AS totaltime_public_3, r0_.cid AS cid_4, r0_.teamid AS teamid_5 FROM rankcache r0_ WHERE r0_.cid = ? AND r0_.teamid = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'r' => 'App\\Entity\\RankCache',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'points_restricted_0' => 'points_restricted',
+                    'totaltime_restricted_1' => 'totaltime_restricted',
+                    'points_public_2' => 'points_public',
+                    'totaltime_public_3' => 'totaltime_public',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'cid_4' => 'integer',
+                    'teamid_5' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'r' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_4' => 'cid',
+                    'teamid_5' => 'teamid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'points_restricted_0' => 'r',
+                    'totaltime_restricted_1' => 'r',
+                    'points_public_2' => 'r',
+                    'totaltime_public_3' => 'r',
+                    'cid_4' => 'r',
+                    'teamid_5' => 'r',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'points_restricted_0' => 'App\\Entity\\RankCache',
+                    'totaltime_restricted_1' => 'App\\Entity\\RankCache',
+                    'points_public_2' => 'App\\Entity\\RankCache',
+                    'totaltime_public_3' => 'App\\Entity\\RankCache',
+                ],
+            ],
+            'isIdentifierColumn' => [
+                2 => [
+                    'r' => [
+                        'cid_4' => true,
+                        'teamid_5' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

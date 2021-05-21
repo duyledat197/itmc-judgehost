@@ -1,0 +1,62 @@
+<?php //%255BApp%255CEntity%255CRankCache%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'rankcache',
+                'order_restricted',
+                'order_public',
+                'cid',
+                'teamid',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                    $o[3],
+                    $o[4],
+                    $o[5],
+                ],
+            ],
+            'options' => [
+                1 => [
+                    'collate' => 'utf8mb4_unicode_ci',
+                    'charset' => 'utf8mb4',
+                    'comment' => 'Scoreboard rank cache',
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'cid',
+                    'points_restricted',
+                    'totaltime_restricted',
+                ],
+                [
+                    'cid',
+                    'points_public',
+                    'totaltime_public',
+                ],
+                [
+                    'cid',
+                ],
+                [
+                    'teamid',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

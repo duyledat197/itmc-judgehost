@@ -1,0 +1,114 @@
+<?php //%255BApp%255CController%255CAPI%255CSubmissionController%2523getSubmissionFilesAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Swagger\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Get')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Response'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}/files',
+            ],
+            'name' => [
+                'submission_files',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'produces' => [
+                1 => [
+                    'application/zip',
+                ],
+            ],
+            '_context' => [
+                1 => $o[2],
+                4 => $o[5],
+                6 => $o[7],
+                8 => $o[9],
+            ],
+            'filename' => [
+                2 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                2 => 827,
+                5 => 827,
+                7 => 827,
+                9 => 827,
+            ],
+            'method' => [
+                2 => 'Annotation',
+                5 => 'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+            ],
+            'class' => [
+                2 => 'DocParser',
+                5 => 'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+            ],
+            'namespace' => [
+                2 => 'Doctrine\\Common\\Annotations',
+                5 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                2 => [
+                    $o[1],
+                ],
+                5 => [
+                    $o[4],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[8],
+                ],
+            ],
+            'response' => [
+                4 => '200',
+                6 => '500',
+            ],
+            'description' => [
+                4 => 'The files for the submission as a ZIP archive',
+                6 => 'An error occurred while creating the ZIP file',
+            ],
+            'ref' => [
+                8 => '#/parameters/id',
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                3 => 'ROLE_API_SOURCE_READER',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[3],
+        $o[4],
+        $o[6],
+        $o[8],
+    ],
+    []
+); }];

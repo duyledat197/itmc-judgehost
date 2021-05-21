@@ -1,0 +1,81 @@
+<?php //%255Be4f2692e0eb3c930bbb1af3adbb3d90a%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'hostname' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT j0_.hostname AS hostname_0, j0_.active AS active_1, j0_.polltime AS polltime_2, j0_.restrictionid AS restrictionid_3, j0_.restrictionid AS restrictionid_4 FROM judgehost j0_ WHERE j0_.hostname = ? LIMIT 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'j' => 'App\\Entity\\Judgehost',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'hostname_0' => 'hostname',
+                    'active_1' => 'active',
+                    'polltime_2' => 'polltime',
+                    'restrictionid_3' => 'restrictionid',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'restrictionid_4' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'j' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'restrictionid_4' => 'restrictionid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'hostname_0' => 'j',
+                    'active_1' => 'j',
+                    'polltime_2' => 'j',
+                    'restrictionid_3' => 'j',
+                    'restrictionid_4' => 'j',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'hostname_0' => 'App\\Entity\\Judgehost',
+                    'active_1' => 'App\\Entity\\Judgehost',
+                    'polltime_2' => 'App\\Entity\\Judgehost',
+                    'restrictionid_3' => 'App\\Entity\\Judgehost',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

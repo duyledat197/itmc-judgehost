@@ -1,0 +1,31 @@
+<?php //%255BApp%255CEntity%255CTeam%2524categoryid%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'categoryid',
+            ],
+            'type' => [
+                'integer',
+            ],
+            'options' => [
+                [
+                    'comment' => 'Team category ID',
+                    'unsigned' => 'true',
+                    'default' => 0,
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

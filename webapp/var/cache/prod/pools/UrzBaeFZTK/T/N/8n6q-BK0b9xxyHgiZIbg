@@ -1,0 +1,46 @@
+<?php //%255Bc90bd42fffe55fe828f7e2016a2bc321%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contests' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT COUNT(s0_.submitid) AS sclr_0 FROM submission s0_ INNER JOIN team t1_ ON s0_.teamid = t1_.teamid INNER JOIN contestproblem c2_ ON s0_.cid = c2_.cid AND s0_.probid = c2_.probid LEFT JOIN judging j3_ ON s0_.submitid = j3_.submitid AND (j3_.valid = 1) LEFT JOIN rejudging r4_ ON j3_.rejudgingid = r4_.rejudgingid WHERE s0_.cid IN (?) AND (j3_.verified = 0 AND j3_.result IS NOT NULL) ORDER BY s0_.submittime DESC, s0_.submitid DESC LIMIT 50',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'sclr_0' => 'cnt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'sclr_0' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

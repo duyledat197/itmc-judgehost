@@ -1,0 +1,40 @@
+<?php //%255BApp%255CEntity%255CTeam%2524judging_last_started%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'judging_last_started',
+            ],
+            'type' => [
+                'decimal',
+            ],
+            'precision' => [
+                32,
+            ],
+            'scale' => [
+                9,
+            ],
+            'nullable' => [
+                true,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Start time of last judging for priorization',
+                    'unsigned' => true,
+                    'default' => 'NULL',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

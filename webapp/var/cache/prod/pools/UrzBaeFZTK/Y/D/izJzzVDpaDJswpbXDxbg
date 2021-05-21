@@ -1,0 +1,92 @@
+<?php //%255Bc86060e3ab973647090f0d0114577b41%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT p0_.probid AS probid_0, p0_.externalid AS externalid_1, p0_.name AS name_2, p0_.timelimit AS timelimit_3, p0_.memlimit AS memlimit_4, p0_.outputlimit AS outputlimit_5, COUNT(t1_.testcaseid) AS sclr_6, p0_.special_compare AS special_compare_7, p0_.special_run AS special_run_8 FROM problem p0_ LEFT JOIN testcase t1_ ON p0_.probid = t1_.probid GROUP BY p0_.probid ORDER BY p0_.probid ASC',
+            ],
+        ],
+        'stdClass' => [
+            'isMixed' => [
+                2 => true,
+            ],
+            'aliasMap' => [
+                2 => [
+                    'p' => 'App\\Entity\\Problem',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'probid_0' => 'probid',
+                    'externalid_1' => 'externalid',
+                    'name_2' => 'name',
+                    'timelimit_3' => 'timelimit',
+                    'memlimit_4' => 'memlimit',
+                    'outputlimit_5' => 'outputlimit',
+                ],
+            ],
+            'scalarMappings' => [
+                2 => [
+                    'sclr_6' => 'testdatacount',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'sclr_6' => 'string',
+                    'special_compare_7' => 'string',
+                    'special_run_8' => 'string',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'p' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'special_compare_7' => 'special_compare',
+                    'special_run_8' => 'special_run',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'probid_0' => 'p',
+                    'externalid_1' => 'p',
+                    'name_2' => 'p',
+                    'timelimit_3' => 'p',
+                    'memlimit_4' => 'p',
+                    'outputlimit_5' => 'p',
+                    'special_compare_7' => 'p',
+                    'special_run_8' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'probid_0' => 'App\\Entity\\Problem',
+                    'externalid_1' => 'App\\Entity\\Problem',
+                    'name_2' => 'App\\Entity\\Problem',
+                    'timelimit_3' => 'App\\Entity\\Problem',
+                    'memlimit_4' => 'App\\Entity\\Problem',
+                    'outputlimit_5' => 'App\\Entity\\Problem',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

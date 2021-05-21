@@ -1,0 +1,43 @@
+<?php //%255B1656859e45c19256c01e8edddad02b6e%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT r0_.rejudgingid AS rejudgingid_0, r0_.starttime AS starttime_1, r0_.endtime AS endtime_2 FROM rejudging r0_ WHERE r0_.endtime IS NULL',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'rejudgingid_0' => 'rejudgingid',
+                    'starttime_1' => 'starttime',
+                    'endtime_2' => 'endtime',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'rejudgingid_0' => 'integer',
+                    'starttime_1' => 'decimal',
+                    'endtime_2' => 'decimal',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

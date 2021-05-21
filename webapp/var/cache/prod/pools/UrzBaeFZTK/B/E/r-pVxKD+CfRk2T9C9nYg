@@ -1,0 +1,102 @@
+<?php //%255B4f552ec4ad7072d18eaba42d484410a1%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'id' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT u0_.userid AS userid_0, u0_.username AS username_1, u0_.name AS name_2, u0_.email AS email_3, u0_.last_login AS last_login_4, u0_.first_login AS first_login_5, u0_.last_ip_address AS last_ip_address_6, u0_.password AS password_7, u0_.ip_address AS ip_address_8, u0_.enabled AS enabled_9, u0_.teamid AS teamid_10, u0_.teamid AS teamid_11 FROM user u0_ WHERE u0_.userid = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'u' => 'App\\Entity\\User',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'userid_0' => 'userid',
+                    'username_1' => 'username',
+                    'name_2' => 'name',
+                    'email_3' => 'email',
+                    'last_login_4' => 'last_login',
+                    'first_login_5' => 'first_login',
+                    'last_ip_address_6' => 'last_ip_address',
+                    'password_7' => 'password',
+                    'ip_address_8' => 'ipAddress',
+                    'enabled_9' => 'enabled',
+                    'teamid_10' => 'teamid',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'teamid_11' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'u' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'teamid_11' => 'teamid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'userid_0' => 'u',
+                    'username_1' => 'u',
+                    'name_2' => 'u',
+                    'email_3' => 'u',
+                    'last_login_4' => 'u',
+                    'first_login_5' => 'u',
+                    'last_ip_address_6' => 'u',
+                    'password_7' => 'u',
+                    'ip_address_8' => 'u',
+                    'enabled_9' => 'u',
+                    'teamid_10' => 'u',
+                    'teamid_11' => 'u',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'userid_0' => 'App\\Entity\\User',
+                    'username_1' => 'App\\Entity\\User',
+                    'name_2' => 'App\\Entity\\User',
+                    'email_3' => 'App\\Entity\\User',
+                    'last_login_4' => 'App\\Entity\\User',
+                    'first_login_5' => 'App\\Entity\\User',
+                    'last_ip_address_6' => 'App\\Entity\\User',
+                    'password_7' => 'App\\Entity\\User',
+                    'ip_address_8' => 'App\\Entity\\User',
+                    'enabled_9' => 'App\\Entity\\User',
+                    'teamid_10' => 'App\\Entity\\User',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,269 @@
+<?php //%255BApp%255CEntity%255CJudgingRun%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\JudgingRun',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\JudgingRun',
+            ],
+            'identifier' => [
+                [
+                    'runid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'runid' => [
+                        'fieldName' => 'runid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Run ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'runid',
+                        'id' => true,
+                    ],
+                    'judgingid' => [
+                        'fieldName' => 'judgingid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Judging ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'judgingid',
+                    ],
+                    'testcaseid' => [
+                        'fieldName' => 'testcaseid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Testcase ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'testcaseid',
+                    ],
+                    'runresult' => [
+                        'fieldName' => 'runresult',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Result of this run, NULL if not finished yet',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'runresult',
+                    ],
+                    'runtime' => [
+                        'fieldName' => 'runtime',
+                        'type' => 'float',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Submission running time on this testcase',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'runtime',
+                    ],
+                    'endtime' => [
+                        'fieldName' => 'endtime',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time run judging ended',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'endtime',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'runid' => 'runid',
+                    'judgingid' => 'judgingid',
+                    'testcaseid' => 'testcaseid',
+                    'runresult' => 'runresult',
+                    'runtime' => 'runtime',
+                    'endtime' => 'endtime',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'runid' => 'runid',
+                    'judgingid' => 'judgingid',
+                    'testcaseid' => 'testcaseid',
+                    'runresult' => 'runresult',
+                    'runtime' => 'runtime',
+                    'endtime' => 'endtime',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'judging_run',
+                    'indexes' => [
+                        'judgingid' => [
+                            'columns' => [
+                                'judgingid',
+                            ],
+                        ],
+                        'testcaseid_2' => [
+                            'columns' => [
+                                'testcaseid',
+                            ],
+                        ],
+                    ],
+                    'uniqueConstraints' => [
+                        'testcaseid' => [
+                            'columns' => [
+                                'judgingid',
+                                'testcaseid',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Result of a testcase run within a judging',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'judging' => [
+                        'fieldName' => 'judging',
+                        'joinColumns' => [
+                            [
+                                'name' => 'judgingid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'judgingid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'runs',
+                        'targetEntity' => 'App\\Entity\\Judging',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\JudgingRun',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'judgingid' => 'judgingid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'judgingid' => 'judgingid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'judgingid' => 'judgingid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'testcase' => [
+                        'fieldName' => 'testcase',
+                        'joinColumns' => [
+                            [
+                                'name' => 'testcaseid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'testcaseid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'judging_runs',
+                        'targetEntity' => 'App\\Entity\\Testcase',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\JudgingRun',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'output' => [
+                        'fieldName' => 'output',
+                        'mappedBy' => 'run',
+                        'targetEntity' => 'App\\Entity\\JudgingRunOutput',
+                        'cascade' => [
+                            'persist',
+                        ],
+                        'orphanRemoval' => true,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\JudgingRun',
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

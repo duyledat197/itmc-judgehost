@@ -1,0 +1,177 @@
+<?php //%255B58b9f613bb523b256ce3699abc72bc28%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'outputDisplayLimit' => [
+                        0,
+                        1,
+                        3,
+                        4,
+                        6,
+                        7,
+                        9,
+                        10,
+                        12,
+                        13,
+                    ],
+                    'outputTruncateMessage' => [
+                        2,
+                        5,
+                        8,
+                        11,
+                        14,
+                    ],
+                    'judging' => [
+                        15,
+                    ],
+                    'problem' => [
+                        16,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.image_thumb AS image_thumb_0, j1_.metadata AS metadata_1, IF(CHAR_LENGTH(t0_.output) > ?, CONCAT(LEFT(t0_.output, ?), ?), t0_.output) AS sclr_2, IF(CHAR_LENGTH(j1_.output_run) > ?, CONCAT(LEFT(j1_.output_run, ?), ?), j1_.output_run) AS sclr_3, IF(CHAR_LENGTH(j1_.output_diff) > ?, CONCAT(LEFT(j1_.output_diff, ?), ?), j1_.output_diff) AS sclr_4, IF(CHAR_LENGTH(j1_.output_error) > ?, CONCAT(LEFT(j1_.output_error, ?), ?), j1_.output_error) AS sclr_5, IF(CHAR_LENGTH(j1_.output_system) > ?, CONCAT(LEFT(j1_.output_system, ?), ?), j1_.output_system) AS sclr_6, t2_.testcaseid AS testcaseid_7, t2_.md5sum_input AS md5sum_input_8, t2_.md5sum_output AS md5sum_output_9, t2_.probid AS probid_10, t2_.rank AS rank_11, t2_.description AS description_12, t2_.orig_input_filename AS orig_input_filename_13, t2_.image_type AS image_type_14, t2_.sample AS sample_15, t2_.deleted AS deleted_16, j3_.runid AS runid_17, j3_.judgingid AS judgingid_18, j3_.testcaseid AS testcaseid_19, j3_.runresult AS runresult_20, j3_.runtime AS runtime_21, j3_.endtime AS endtime_22, t2_.probid AS probid_23, j3_.judgingid AS judgingid_24, j3_.testcaseid AS testcaseid_25 FROM testcase t2_ INNER JOIN testcase_content t0_ ON t2_.testcaseid = t0_.testcaseid LEFT JOIN judging_run j3_ ON t2_.testcaseid = j3_.testcaseid AND (j3_.judgingid = ?) LEFT JOIN judging_run_output j1_ ON j3_.runid = j1_.runid WHERE t2_.probid = ? ORDER BY t2_.rank ASC',
+            ],
+        ],
+        'stdClass' => [
+            'isMixed' => [
+                2 => true,
+            ],
+            'aliasMap' => [
+                2 => [
+                    't' => 'App\\Entity\\Testcase',
+                    'jr' => 'App\\Entity\\JudgingRun',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'jr' => 'judging_runs',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'jr' => 't',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'testcaseid_7' => 'testcaseid',
+                    'md5sum_input_8' => 'md5sum_input',
+                    'md5sum_output_9' => 'md5sum_output',
+                    'probid_10' => 'probid',
+                    'rank_11' => 'rank',
+                    'description_12' => 'description',
+                    'orig_input_filename_13' => 'orig_input_filename',
+                    'image_type_14' => 'image_type',
+                    'sample_15' => 'sample',
+                    'deleted_16' => 'deleted',
+                    'runid_17' => 'runid',
+                    'judgingid_18' => 'judgingid',
+                    'testcaseid_19' => 'testcaseid',
+                    'runresult_20' => 'runresult',
+                    'runtime_21' => 'runtime',
+                    'endtime_22' => 'endtime',
+                ],
+            ],
+            'scalarMappings' => [
+                2 => [
+                    'image_thumb_0' => 'image_thumb',
+                    'metadata_1' => 'metadata',
+                    'sclr_2' => 'output_reference',
+                    'sclr_3' => 'output_run',
+                    'sclr_4' => 'output_diff',
+                    'sclr_5' => 'output_error',
+                    'sclr_6' => 'output_system',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'image_thumb_0' => 'blobtext',
+                    'metadata_1' => 'blobtext',
+                    'sclr_2' => 'string',
+                    'sclr_3' => 'string',
+                    'sclr_4' => 'string',
+                    'sclr_5' => 'string',
+                    'sclr_6' => 'string',
+                    'probid_23' => 'integer',
+                    'judgingid_24' => 'integer',
+                    'testcaseid_25' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    't' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'probid_23' => 'probid',
+                    'judgingid_24' => 'judgingid',
+                    'testcaseid_25' => 'testcaseid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'testcaseid_7' => 't',
+                    'md5sum_input_8' => 't',
+                    'md5sum_output_9' => 't',
+                    'probid_10' => 't',
+                    'rank_11' => 't',
+                    'description_12' => 't',
+                    'orig_input_filename_13' => 't',
+                    'image_type_14' => 't',
+                    'sample_15' => 't',
+                    'deleted_16' => 't',
+                    'runid_17' => 'jr',
+                    'judgingid_18' => 'jr',
+                    'testcaseid_19' => 'jr',
+                    'runresult_20' => 'jr',
+                    'runtime_21' => 'jr',
+                    'endtime_22' => 'jr',
+                    'probid_23' => 't',
+                    'judgingid_24' => 'jr',
+                    'testcaseid_25' => 'jr',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'testcaseid_7' => 'App\\Entity\\Testcase',
+                    'md5sum_input_8' => 'App\\Entity\\Testcase',
+                    'md5sum_output_9' => 'App\\Entity\\Testcase',
+                    'probid_10' => 'App\\Entity\\Testcase',
+                    'rank_11' => 'App\\Entity\\Testcase',
+                    'description_12' => 'App\\Entity\\Testcase',
+                    'orig_input_filename_13' => 'App\\Entity\\Testcase',
+                    'image_type_14' => 'App\\Entity\\Testcase',
+                    'sample_15' => 'App\\Entity\\Testcase',
+                    'deleted_16' => 'App\\Entity\\Testcase',
+                    'runid_17' => 'App\\Entity\\JudgingRun',
+                    'judgingid_18' => 'App\\Entity\\JudgingRun',
+                    'testcaseid_19' => 'App\\Entity\\JudgingRun',
+                    'runresult_20' => 'App\\Entity\\JudgingRun',
+                    'runtime_21' => 'App\\Entity\\JudgingRun',
+                    'endtime_22' => 'App\\Entity\\JudgingRun',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

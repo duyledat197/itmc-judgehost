@@ -1,0 +1,104 @@
+<?php //%255BApp%255CController%255CAPI%255CJudgehostController%2523getNextJudgingAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/next-judging/{hostname}',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_JUDGEHOST',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'The next judging to judge',
+                6 => 'The hostname of the judgehost to get the next judging for',
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            '_context' => [
+                2 => $o[5],
+                $o[4],
+                6 => $o[7],
+            ],
+            'ref' => [
+                3 => '#/definitions/NextJudging',
+            ],
+            'filename' => [
+                4 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 827,
+                827,
+                7 => 827,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                7 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                7 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+            ],
+            'name' => [
+                6 => 'hostname',
+            ],
+            'in' => [
+                6 => 'path',
+            ],
+            'type' => [
+                6 => 'string',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[6],
+    ],
+    []
+); }];

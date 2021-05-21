@@ -1,0 +1,46 @@
+<?php //%255BApp%255CEntity%255CSubmission%2524contest_problem%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ManyToOne'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToOne')),
+        clone ($p['Doctrine\\ORM\\Mapping\\JoinColumns'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\JoinColumns')),
+        clone ($p['Doctrine\\ORM\\Mapping\\JoinColumn'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\JoinColumn')),
+        clone $p['Doctrine\\ORM\\Mapping\\JoinColumn'],
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'targetEntity' => [
+                'App\\Entity\\ContestProblem',
+            ],
+            'inversedBy' => [
+                'submissions',
+            ],
+            'value' => [
+                1 => [
+                    $o[2],
+                    $o[3],
+                ],
+            ],
+            'name' => [
+                2 => 'cid',
+                'probid',
+            ],
+            'referencedColumnName' => [
+                2 => 'cid',
+                'probid',
+            ],
+            'onDelete' => [
+                2 => 'CASCADE',
+                'CASCADE',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[4],
+    ],
+    []
+); }];

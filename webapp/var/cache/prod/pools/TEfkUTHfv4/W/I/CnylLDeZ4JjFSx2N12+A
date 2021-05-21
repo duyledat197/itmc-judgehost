@@ -1,0 +1,33 @@
+<?php //%255BApp%255CEntity%255CJudging%2524verify_comment%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'verify_comment',
+            ],
+            'length' => [
+                255,
+            ],
+            'nullable' => [
+                true,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Optional additional information provided by the verifier',
+                    'default' => 'NULL',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

@@ -1,0 +1,73 @@
+<?php //%255B9ee763478fe03ccc8446666e18f92a76%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'run' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT e0_.execid AS execid_0, e0_.md5sum AS md5sum_1, e0_.zipfile AS zipfile_2, e0_.description AS description_3, e0_.type AS type_4 FROM executable e0_ WHERE e0_.type = ? ORDER BY e0_.execid ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'e' => 'App\\Entity\\Executable',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'execid_0' => 'execid',
+                    'md5sum_1' => 'md5sum',
+                    'zipfile_2' => 'zipfile',
+                    'description_3' => 'description',
+                    'type_4' => 'type',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'e' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'execid_0' => 'e',
+                    'md5sum_1' => 'e',
+                    'zipfile_2' => 'e',
+                    'description_3' => 'e',
+                    'type_4' => 'e',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'execid_0' => 'App\\Entity\\Executable',
+                    'md5sum_1' => 'App\\Entity\\Executable',
+                    'zipfile_2' => 'App\\Entity\\Executable',
+                    'description_3' => 'App\\Entity\\Executable',
+                    'type_4' => 'App\\Entity\\Executable',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

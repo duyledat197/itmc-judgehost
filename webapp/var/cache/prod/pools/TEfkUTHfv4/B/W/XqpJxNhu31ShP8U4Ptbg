@@ -1,0 +1,63 @@
+<?php //%255BApp%255CController%255CAPI%255CJudgementTypeController%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Route')),
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\Prefix'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Prefix')),
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\NamePrefix'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\NamePrefix')),
+        clone ($p['Swagger\\Annotations\\Tag'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Tag')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/v4/contests/{cid}/judgement-types',
+            ],
+            'defaults' => [
+                [
+                    '_format' => 'json',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'value' => [
+                1 => '/api/contests/{cid}/judgement-types',
+                'judgement_type_',
+            ],
+            'name' => [
+                3 => 'Judgement types',
+            ],
+            '_context' => [
+                3 => $o[4],
+            ],
+            'filename' => [
+                4 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 827,
+            ],
+            'method' => [
+                4 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+    ],
+    []
+); }];

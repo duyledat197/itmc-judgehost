@@ -1,0 +1,65 @@
+<?php //App.Entity.ContestProblem
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Validator\\Constraints\\GreaterThanOrEqual'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\GreaterThanOrEqual')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ContestProblem',
+                'points',
+            ],
+            'defaultGroup' => [
+                'ContestProblem',
+            ],
+            'members' => [
+                [
+                    'points' => [
+                        $o[1],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'points' => $o[1],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\ContestProblem',
+            ],
+            'property' => [
+                1 => 'points',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'ContestProblem' => [
+                        $o[2],
+                    ],
+                ],
+            ],
+            'value' => [
+                2 => 0,
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'ContestProblem',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

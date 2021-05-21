@@ -1,0 +1,102 @@
+<?php //%255B3ab9ae0c2d01c6a8efa0f9a407b1cc42%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'description' => [
+                        0,
+                    ],
+                    'disabled' => [
+                        1,
+                    ],
+                    'status' => [
+                        2,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT i0_.errorid AS errorid_0, i0_.judgingid AS judgingid_1, i0_.cid AS cid_2, i0_.description AS description_3, i0_.judgehostlog AS judgehostlog_4, i0_.time AS time_5, i0_.disabled AS disabled_6, i0_.status AS status_7, i0_.cid AS cid_8, i0_.judgingid AS judgingid_9 FROM internal_error i0_ WHERE i0_.description = ? AND i0_.disabled = ? AND i0_.status = ? LIMIT 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'e' => 'App\\Entity\\InternalError',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'errorid_0' => 'errorid',
+                    'judgingid_1' => 'judgingid',
+                    'cid_2' => 'cid',
+                    'description_3' => 'description',
+                    'judgehostlog_4' => 'judgehostlog',
+                    'time_5' => 'time',
+                    'disabled_6' => 'disabled',
+                    'status_7' => 'status',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'cid_8' => 'integer',
+                    'judgingid_9' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'e' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_8' => 'cid',
+                    'judgingid_9' => 'judgingid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'errorid_0' => 'e',
+                    'judgingid_1' => 'e',
+                    'cid_2' => 'e',
+                    'description_3' => 'e',
+                    'judgehostlog_4' => 'e',
+                    'time_5' => 'e',
+                    'disabled_6' => 'e',
+                    'status_7' => 'e',
+                    'cid_8' => 'e',
+                    'judgingid_9' => 'e',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'errorid_0' => 'App\\Entity\\InternalError',
+                    'judgingid_1' => 'App\\Entity\\InternalError',
+                    'cid_2' => 'App\\Entity\\InternalError',
+                    'description_3' => 'App\\Entity\\InternalError',
+                    'judgehostlog_4' => 'App\\Entity\\InternalError',
+                    'time_5' => 'App\\Entity\\InternalError',
+                    'disabled_6' => 'App\\Entity\\InternalError',
+                    'status_7' => 'App\\Entity\\InternalError',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

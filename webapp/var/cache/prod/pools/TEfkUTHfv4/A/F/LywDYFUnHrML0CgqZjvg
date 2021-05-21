@@ -1,0 +1,118 @@
+<?php //%255BApp%255CController%255CAPI%255CProblemController%2523listAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone ($p['Swagger\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Items')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                1 => '200',
+            ],
+            'description' => [
+                1 => 'Returns all the problems for this contest',
+            ],
+            'schema' => [
+                1 => $o[2],
+            ],
+            '_context' => [
+                1 => $o[6],
+                $o[5],
+                $o[4],
+                7 => $o[8],
+                9 => $o[10],
+            ],
+            'type' => [
+                2 => 'array',
+            ],
+            'items' => [
+                2 => $o[3],
+            ],
+            'ref' => [
+                3 => '#/definitions/ContestProblem',
+                7 => '#/parameters/idlist',
+                9 => '#/parameters/strict',
+            ],
+            'filename' => [
+                4 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 827,
+                827,
+                827,
+                8 => 827,
+                10 => 827,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                10 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                10 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                [
+                    $o[1],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                10 => [
+                    $o[9],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[7],
+        $o[9],
+    ],
+    []
+); }];

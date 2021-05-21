@@ -1,0 +1,65 @@
+<?php //%255Bcd7c313c3c0339cad97d6c2fade61b50%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.configid AS configid_0, c0_.name AS name_1, c0_.value AS value_2 FROM configuration c0_',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'c' => 'App\\Entity\\Configuration',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'configid_0' => 'configid',
+                    'name_1' => 'name',
+                    'value_2' => 'value',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'c' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'configid_0' => 'c',
+                    'name_1' => 'c',
+                    'value_2' => 'c',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'c' => 'name_1',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'configid_0' => 'App\\Entity\\Configuration',
+                    'name_1' => 'App\\Entity\\Configuration',
+                    'value_2' => 'App\\Entity\\Configuration',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

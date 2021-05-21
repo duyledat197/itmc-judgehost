@@ -1,0 +1,126 @@
+<?php //%255Be44ece29e1cbec8b859e469a7d5c89ac%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'hostname' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT j0_.judgingid AS judgingid_0, j0_.cid AS cid_1, j0_.submitid AS submitid_2, j0_.starttime AS starttime_3, j0_.endtime AS endtime_4, j0_.result AS result_5, j0_.verified AS verified_6, j0_.jury_member AS jury_member_7, j0_.verify_comment AS verify_comment_8, j0_.valid AS valid_9, j0_.output_compile AS output_compile_10, j0_.seen AS seen_11, j0_.rejudgingid AS rejudgingid_12, j0_.prevjudgingid AS prevjudgingid_13, j0_.judgehost AS judgehost_14, j0_.cid AS cid_15, j0_.submitid AS submitid_16, j0_.judgehost AS judgehost_17, j0_.rejudgingid AS rejudgingid_18, j0_.prevjudgingid AS prevjudgingid_19 FROM judging j0_ INNER JOIN judgehost j1_ ON j0_.judgehost = j1_.hostname LEFT JOIN rejudging r2_ ON j0_.rejudgingid = r2_.rejudgingid WHERE j1_.hostname = ? AND j0_.endtime IS NULL AND (j0_.valid = 1 OR r2_.valid = 1)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'j' => 'App\\Entity\\Judging',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'judgingid_0' => 'judgingid',
+                    'cid_1' => 'cid',
+                    'submitid_2' => 'submitid',
+                    'starttime_3' => 'starttime',
+                    'endtime_4' => 'endtime',
+                    'result_5' => 'result',
+                    'verified_6' => 'verified',
+                    'jury_member_7' => 'jury_member',
+                    'verify_comment_8' => 'verify_comment',
+                    'valid_9' => 'valid',
+                    'output_compile_10' => 'output_compile',
+                    'seen_11' => 'seen',
+                    'rejudgingid_12' => 'rejudgingid',
+                    'prevjudgingid_13' => 'prevjudgingid',
+                    'judgehost_14' => 'judgehost_name',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'cid_15' => 'integer',
+                    'submitid_16' => 'integer',
+                    'judgehost_17' => 'string',
+                    'rejudgingid_18' => 'integer',
+                    'prevjudgingid_19' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'j' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_15' => 'cid',
+                    'submitid_16' => 'submitid',
+                    'judgehost_17' => 'judgehost',
+                    'rejudgingid_18' => 'rejudgingid',
+                    'prevjudgingid_19' => 'prevjudgingid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'judgingid_0' => 'j',
+                    'cid_1' => 'j',
+                    'submitid_2' => 'j',
+                    'starttime_3' => 'j',
+                    'endtime_4' => 'j',
+                    'result_5' => 'j',
+                    'verified_6' => 'j',
+                    'jury_member_7' => 'j',
+                    'verify_comment_8' => 'j',
+                    'valid_9' => 'j',
+                    'output_compile_10' => 'j',
+                    'seen_11' => 'j',
+                    'rejudgingid_12' => 'j',
+                    'prevjudgingid_13' => 'j',
+                    'judgehost_14' => 'j',
+                    'cid_15' => 'j',
+                    'submitid_16' => 'j',
+                    'judgehost_17' => 'j',
+                    'rejudgingid_18' => 'j',
+                    'prevjudgingid_19' => 'j',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'judgingid_0' => 'App\\Entity\\Judging',
+                    'cid_1' => 'App\\Entity\\Judging',
+                    'submitid_2' => 'App\\Entity\\Judging',
+                    'starttime_3' => 'App\\Entity\\Judging',
+                    'endtime_4' => 'App\\Entity\\Judging',
+                    'result_5' => 'App\\Entity\\Judging',
+                    'verified_6' => 'App\\Entity\\Judging',
+                    'jury_member_7' => 'App\\Entity\\Judging',
+                    'verify_comment_8' => 'App\\Entity\\Judging',
+                    'valid_9' => 'App\\Entity\\Judging',
+                    'output_compile_10' => 'App\\Entity\\Judging',
+                    'seen_11' => 'App\\Entity\\Judging',
+                    'rejudgingid_12' => 'App\\Entity\\Judging',
+                    'prevjudgingid_13' => 'App\\Entity\\Judging',
+                    'judgehost_14' => 'App\\Entity\\Judging',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

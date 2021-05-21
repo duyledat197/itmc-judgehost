@@ -1,0 +1,127 @@
+<?php //%255BApp%255CController%255CAPI%255CTestcaseController%2523getFileAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+            'expression' => [
+                'is_granted(\'ROLE_JURY\') or is_granted(\'ROLE_JUDGEHOST\')',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                1 => '/{id}/file/{type}',
+            ],
+            'methods' => [
+                1 => [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'ref' => [
+                2 => '#/parameters/id',
+            ],
+            '_context' => [
+                2 => $o[3],
+                4 => $o[5],
+                6 => $o[9],
+                $o[8],
+            ],
+            'filename' => [
+                3 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 827,
+                5 => 827,
+                8 => 827,
+                827,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                5 => 'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                5 => 'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                5 => 'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                5 => [
+                    $o[4],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[6],
+                ],
+            ],
+            'name' => [
+                4 => 'type',
+            ],
+            'in' => [
+                4 => 'path',
+            ],
+            'description' => [
+                4 => 'Type of file to get',
+                6 => 'Information about the file of the given testcase',
+                'Base64-encoded file contents',
+            ],
+            'required' => [
+                4 => true,
+            ],
+            'type' => [
+                4 => 'string',
+                7 => 'string',
+            ],
+            'enum' => [
+                4 => [
+                    'input',
+                    'output',
+                ],
+            ],
+            'response' => [
+                6 => '200',
+            ],
+            'schema' => [
+                6 => $o[7],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[4],
+        $o[6],
+    ],
+    []
+); }];

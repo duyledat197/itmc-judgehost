@@ -1,0 +1,151 @@
+<?php //%255BApp%255CController%255CAPI%255CRunController%2523singleAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone $p['Swagger\\Annotations\\Schema'],
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Schema'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+            'expression' => [
+                'is_granted(\'ROLE_JURY\') or is_granted(\'ROLE_JUDGEHOST\') or is_granted(\'ROLE_API_READER\')',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                1 => '/{id}',
+            ],
+            'methods' => [
+                1 => [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'Returns the given run for this contest',
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            '_context' => [
+                2 => $o[11],
+                $o[10],
+                $o[7],
+                $o[6],
+                8 => $o[9],
+                12 => $o[13],
+                14 => $o[15],
+            ],
+            'allOf' => [
+                3 => [
+                    $o[4],
+                    $o[8],
+                ],
+            ],
+            'ref' => [
+                4 => $o[5],
+                8 => '#/definitions/RunExtraFields',
+                12 => '#/parameters/id',
+                14 => '#/parameters/strict',
+            ],
+            'type' => [
+                5 => 'App\\Entity\\JudgingRun',
+            ],
+            'filename' => [
+                6 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                13 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                6 => 827,
+                827,
+                9 => 827,
+                827,
+                827,
+                13 => 827,
+                15 => 827,
+            ],
+            'method' => [
+                6 => 'Annotation',
+                'Annotation',
+                9 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                13 => 'Annotation',
+                15 => 'Annotation',
+            ],
+            'class' => [
+                6 => 'DocParser',
+                'DocParser',
+                9 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+            ],
+            'namespace' => [
+                6 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                13 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                6 => [
+                    $o[5],
+                ],
+                [
+                    $o[4],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[14],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[12],
+        $o[14],
+    ],
+    []
+); }];

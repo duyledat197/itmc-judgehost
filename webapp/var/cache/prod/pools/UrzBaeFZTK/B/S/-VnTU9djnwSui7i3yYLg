@@ -1,0 +1,305 @@
+<?php //%255BApp%255CEntity%255CLanguage%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Language',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Language',
+            ],
+            'identifier' => [
+                [
+                    'langid',
+                ],
+            ],
+            'fieldMappings' => [
+                [
+                    'langid' => [
+                        'fieldName' => 'langid',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Language ID (string)',
+                        ],
+                        'columnName' => 'langid',
+                        'id' => true,
+                    ],
+                    'externalid' => [
+                        'fieldName' => 'externalid',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'default' => 'NULL',
+                            'comment' => 'Language ID to expose in the REST API',
+                        ],
+                        'columnName' => 'externalid',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Descriptive language name',
+                        ],
+                        'columnName' => 'name',
+                    ],
+                    'extensions' => [
+                        'fieldName' => 'extensions',
+                        'type' => 'json',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'List of recognized extensions (JSON encoded)',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'extensions',
+                    ],
+                    'filterCompilerFiles' => [
+                        'fieldName' => 'filterCompilerFiles',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Whether to filter the files passed to the compiler by the extension list.',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'filter_compiler_files',
+                    ],
+                    'allowSubmit' => [
+                        'fieldName' => 'allowSubmit',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Are submissions accepted in this language?',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'allow_submit',
+                    ],
+                    'allowJudge' => [
+                        'fieldName' => 'allowJudge',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Are submissions in this language judged?',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'allow_judge',
+                    ],
+                    'timeFactor' => [
+                        'fieldName' => 'timeFactor',
+                        'type' => 'float',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Language-specific factor multiplied by problem run times',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'time_factor',
+                    ],
+                    'compile_script' => [
+                        'fieldName' => 'compile_script',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Script to compile source code for this language',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'compile_script',
+                    ],
+                    'require_entry_point' => [
+                        'fieldName' => 'require_entry_point',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Whether submissions require a code entry point to be specified.',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'require_entry_point',
+                    ],
+                    'entry_point_description' => [
+                        'fieldName' => 'entry_point_description',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'The description used in the UI for the entry point field.',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'entry_point_description',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'langid' => 'langid',
+                    'externalid' => 'externalid',
+                    'name' => 'name',
+                    'extensions' => 'extensions',
+                    'filter_compiler_files' => 'filterCompilerFiles',
+                    'allow_submit' => 'allowSubmit',
+                    'allow_judge' => 'allowJudge',
+                    'time_factor' => 'timeFactor',
+                    'compile_script' => 'compile_script',
+                    'require_entry_point' => 'require_entry_point',
+                    'entry_point_description' => 'entry_point_description',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'langid' => 'langid',
+                    'externalid' => 'externalid',
+                    'name' => 'name',
+                    'extensions' => 'extensions',
+                    'filterCompilerFiles' => 'filter_compiler_files',
+                    'allowSubmit' => 'allow_submit',
+                    'allowJudge' => 'allow_judge',
+                    'timeFactor' => 'time_factor',
+                    'compile_script' => 'compile_script',
+                    'require_entry_point' => 'require_entry_point',
+                    'entry_point_description' => 'entry_point_description',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'language',
+                    'indexes' => [
+                        'compile_script' => [
+                            'columns' => [
+                                'compile_script',
+                            ],
+                        ],
+                    ],
+                    'uniqueConstraints' => [
+                        'externalid' => [
+                            'columns' => [
+                                'externalid',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    '190',
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Programming languages in which teams can submit solutions',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'compile_executable' => [
+                        'fieldName' => 'compile_executable',
+                        'joinColumns' => [
+                            [
+                                'name' => 'compile_script',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'execid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'languages',
+                        'targetEntity' => 'App\\Entity\\Executable',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Language',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'compile_script' => 'execid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'compile_script' => 'compile_script',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'execid' => 'compile_script',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'submissions' => [
+                        'fieldName' => 'submissions',
+                        'mappedBy' => 'language',
+                        'targetEntity' => 'App\\Entity\\Submission',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Language',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,72 @@
+<?php //%255BApp%255CEntity%255CProblem%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone ($p['Doctrine\\ORM\\Mapping\\HasLifecycleCallbacks'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\HasLifecycleCallbacks')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'problem',
+                'externalid',
+                'special_run',
+                'special_compare',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                    $o[3],
+                    $o[4],
+                ],
+            ],
+            'options' => [
+                1 => [
+                    'collate' => 'utf8mb4_unicode_ci',
+                    'charset' => 'utf8mb4',
+                    'comment' => 'Problems the teams can submit solutions for',
+                ],
+                [
+                    'lengths' => [
+                        '190',
+                    ],
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'externalid',
+                ],
+                [
+                    'special_run',
+                ],
+                [
+                    'special_compare',
+                ],
+            ],
+            'message' => [
+                6 => 'A problem with the same `externalid` already exists - is this a duplicate?',
+            ],
+            'fields' => [
+                6 => 'externalid',
+            ],
+            'groups' => [
+                6 => [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[5],
+        $o[6],
+    ],
+    []
+); }];

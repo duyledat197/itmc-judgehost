@@ -1,0 +1,161 @@
+<?php //App.Entity.Problem
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\GreaterThan'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\GreaterThan')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\GreaterThan'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\GreaterThan'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\File'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\File')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Problem',
+                'timelimit',
+                3 => 'memlimit',
+                5 => 'outputlimit',
+                7 => 'problemtextFile',
+            ],
+            'defaultGroup' => [
+                'Problem',
+            ],
+            'members' => [
+                [
+                    'timelimit' => [
+                        $o[1],
+                    ],
+                    'memlimit' => [
+                        $o[3],
+                    ],
+                    'outputlimit' => [
+                        $o[5],
+                    ],
+                    'problemtextFile' => [
+                        $o[7],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'timelimit' => $o[1],
+                    'memlimit' => $o[3],
+                    'outputlimit' => $o[5],
+                    'problemtextFile' => $o[7],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[9],
+                ],
+                [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                ],
+                5 => [
+                    $o[6],
+                ],
+                7 => [
+                    $o[8],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[9],
+                    ],
+                    'Problem' => [
+                        $o[9],
+                    ],
+                ],
+                [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'Problem' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'Default' => [
+                        $o[4],
+                    ],
+                    'Problem' => [
+                        $o[4],
+                    ],
+                ],
+                5 => [
+                    'Default' => [
+                        $o[6],
+                    ],
+                    'Problem' => [
+                        $o[6],
+                    ],
+                ],
+                7 => [
+                    'Default' => [
+                        $o[8],
+                    ],
+                    'Problem' => [
+                        $o[8],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Problem',
+                3 => 'App\\Entity\\Problem',
+                5 => 'App\\Entity\\Problem',
+                7 => 'App\\Entity\\Problem',
+            ],
+            'property' => [
+                1 => 'timelimit',
+                3 => 'memlimit',
+                5 => 'outputlimit',
+                7 => 'problemtextFile',
+            ],
+            'value' => [
+                2 => 0,
+                4 => 0,
+                6 => 0,
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Problem',
+                ],
+                4 => [
+                    'Default',
+                    'Problem',
+                ],
+                6 => [
+                    'Default',
+                    'Problem',
+                ],
+                8 => [
+                    'Default',
+                    'Problem',
+                ],
+                [
+                    'Default',
+                    'Problem',
+                ],
+            ],
+            'message' => [
+                9 => 'A problem with the same `externalid` already exists - is this a duplicate?',
+            ],
+            'fields' => [
+                9 => 'externalid',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,154 @@
+<?php //%255Ba19d95b5a7371add352d4423a6ea49f0%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                    'sortorder' => [
+                        1,
+                    ],
+                    'points' => [
+                        2,
+                    ],
+                    'totaltime' => [
+                        3,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT r0_.points_restricted AS points_restricted_0, r0_.totaltime_restricted AS totaltime_restricted_1, r0_.points_public AS points_public_2, r0_.totaltime_public AS totaltime_public_3, t1_.teamid AS teamid_4, t1_.icpcid AS icpcid_5, t1_.name AS name_6, t1_.display_name AS display_name_7, t1_.categoryid AS categoryid_8, t1_.affilid AS affilid_9, t1_.enabled AS enabled_10, t1_.members AS members_11, t1_.room AS room_12, t1_.comments AS comments_13, t1_.judging_last_started AS judging_last_started_14, t1_.penalty AS penalty_15, r0_.cid AS cid_16, r0_.teamid AS teamid_17, t1_.affilid AS affilid_18, t1_.categoryid AS categoryid_19 FROM rankcache r0_ INNER JOIN team t1_ ON r0_.teamid = t1_.teamid INNER JOIN team_category t2_ ON t1_.categoryid = t2_.categoryid WHERE r0_.cid = ? AND t2_.sortorder = ? AND t1_.enabled = 1 AND (r0_.points_restricted = ? AND r0_.totaltime_restricted = ?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'r' => 'App\\Entity\\RankCache',
+                    't' => 'App\\Entity\\Team',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    't' => 'team',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    't' => 'r',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'points_restricted_0' => 'points_restricted',
+                    'totaltime_restricted_1' => 'totaltime_restricted',
+                    'points_public_2' => 'points_public',
+                    'totaltime_public_3' => 'totaltime_public',
+                    'teamid_4' => 'teamid',
+                    'icpcid_5' => 'icpcid',
+                    'name_6' => 'name',
+                    'display_name_7' => 'display_name',
+                    'categoryid_8' => 'categoryid',
+                    'affilid_9' => 'affilid',
+                    'enabled_10' => 'enabled',
+                    'members_11' => 'members',
+                    'room_12' => 'room',
+                    'comments_13' => 'comments',
+                    'judging_last_started_14' => 'judging_last_started',
+                    'penalty_15' => 'penalty',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'cid_16' => 'integer',
+                    'teamid_17' => 'integer',
+                    'affilid_18' => 'integer',
+                    'categoryid_19' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'r' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_16' => 'cid',
+                    'teamid_17' => 'teamid',
+                    'affilid_18' => 'affilid',
+                    'categoryid_19' => 'categoryid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'points_restricted_0' => 'r',
+                    'totaltime_restricted_1' => 'r',
+                    'points_public_2' => 'r',
+                    'totaltime_public_3' => 'r',
+                    'teamid_4' => 't',
+                    'icpcid_5' => 't',
+                    'name_6' => 't',
+                    'display_name_7' => 't',
+                    'categoryid_8' => 't',
+                    'affilid_9' => 't',
+                    'enabled_10' => 't',
+                    'members_11' => 't',
+                    'room_12' => 't',
+                    'comments_13' => 't',
+                    'judging_last_started_14' => 't',
+                    'penalty_15' => 't',
+                    'cid_16' => 'r',
+                    'teamid_17' => 'r',
+                    'affilid_18' => 't',
+                    'categoryid_19' => 't',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'points_restricted_0' => 'App\\Entity\\RankCache',
+                    'totaltime_restricted_1' => 'App\\Entity\\RankCache',
+                    'points_public_2' => 'App\\Entity\\RankCache',
+                    'totaltime_public_3' => 'App\\Entity\\RankCache',
+                    'teamid_4' => 'App\\Entity\\Team',
+                    'icpcid_5' => 'App\\Entity\\Team',
+                    'name_6' => 'App\\Entity\\Team',
+                    'display_name_7' => 'App\\Entity\\Team',
+                    'categoryid_8' => 'App\\Entity\\Team',
+                    'affilid_9' => 'App\\Entity\\Team',
+                    'enabled_10' => 'App\\Entity\\Team',
+                    'members_11' => 'App\\Entity\\Team',
+                    'room_12' => 'App\\Entity\\Team',
+                    'comments_13' => 'App\\Entity\\Team',
+                    'judging_last_started_14' => 'App\\Entity\\Team',
+                    'penalty_15' => 'App\\Entity\\Team',
+                ],
+            ],
+            'isIdentifierColumn' => [
+                2 => [
+                    'r' => [
+                        'cid_16' => true,
+                        'teamid_17' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

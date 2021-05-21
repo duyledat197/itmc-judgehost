@@ -1,0 +1,200 @@
+<?php //%255BApp%255CEntity%255CTeamCategory%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\TeamCategory',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\TeamCategory',
+            ],
+            'identifier' => [
+                [
+                    'categoryid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'categoryid' => [
+                        'fieldName' => 'categoryid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Team category ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'categoryid',
+                        'id' => true,
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Descriptive name',
+                        ],
+                        'columnName' => 'name',
+                    ],
+                    'sortorder' => [
+                        'fieldName' => 'sortorder',
+                        'type' => 'tinyint',
+                        'scale' => 0,
+                        'length' => 1,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Where to sort this category on the scoreboard',
+                            'unsigned' => true,
+                            'default' => '0',
+                        ],
+                        'columnName' => 'sortorder',
+                    ],
+                    'color' => [
+                        'fieldName' => 'color',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Background colour on the scoreboard',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'color',
+                    ],
+                    'visible' => [
+                        'fieldName' => 'visible',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Are teams in this category visible?',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'visible',
+                    ],
+                    'allow_self_registration' => [
+                        'fieldName' => 'allow_self_registration',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Are self-registered teams allowed to choose this category?',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'allow_self_registration',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'categoryid' => 'categoryid',
+                    'name' => 'name',
+                    'sortorder' => 'sortorder',
+                    'color' => 'color',
+                    'visible' => 'visible',
+                    'allow_self_registration' => 'allow_self_registration',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'categoryid' => 'categoryid',
+                    'name' => 'name',
+                    'sortorder' => 'sortorder',
+                    'color' => 'color',
+                    'visible' => 'visible',
+                    'allow_self_registration' => 'allow_self_registration',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'team_category',
+                    'indexes' => [
+                        'sortorder' => [
+                            'columns' => [
+                                'sortorder',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Categories for teams (e.g.: participants, observers, ...)',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'teams' => [
+                        'fieldName' => 'teams',
+                        'mappedBy' => 'category',
+                        'targetEntity' => 'App\\Entity\\Team',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\TeamCategory',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                    'contests' => [
+                        'fieldName' => 'contests',
+                        'joinTable' => [],
+                        'targetEntity' => 'App\\Entity\\Contest',
+                        'mappedBy' => 'team_categories',
+                        'inversedBy' => null,
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\TeamCategory',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

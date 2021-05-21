@@ -1,0 +1,135 @@
+<?php //%255B797e7f424dd41ff48f2a4397309626f2%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'problem' => [
+                        0,
+                    ],
+                    'rank' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.testcaseid AS testcaseid_0, t0_.md5sum_input AS md5sum_input_1, t0_.md5sum_output AS md5sum_output_2, t0_.probid AS probid_3, t0_.rank AS rank_4, t0_.description AS description_5, t0_.orig_input_filename AS orig_input_filename_6, t0_.image_type AS image_type_7, t0_.sample AS sample_8, t0_.deleted AS deleted_9, t1_.input AS input_10, t1_.output AS output_11, t1_.image AS image_12, t1_.image_thumb AS image_thumb_13, t0_.probid AS probid_14, t1_.testcaseid AS testcaseid_15 FROM testcase t0_ INNER JOIN testcase_content t1_ ON t0_.testcaseid = t1_.testcaseid WHERE t0_.probid = ? AND t0_.rank = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'tc' => 'App\\Entity\\Testcase',
+                    'tcc' => 'App\\Entity\\TestcaseContent',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'tcc' => 'content',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'tcc' => 'tc',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'testcaseid_0' => 'testcaseid',
+                    'md5sum_input_1' => 'md5sum_input',
+                    'md5sum_output_2' => 'md5sum_output',
+                    'probid_3' => 'probid',
+                    'rank_4' => 'rank',
+                    'description_5' => 'description',
+                    'orig_input_filename_6' => 'orig_input_filename',
+                    'image_type_7' => 'image_type',
+                    'sample_8' => 'sample',
+                    'deleted_9' => 'deleted',
+                    'input_10' => 'input',
+                    'output_11' => 'output',
+                    'image_12' => 'image',
+                    'image_thumb_13' => 'image_thumb',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'probid_14' => 'integer',
+                    'testcaseid_15' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'tc' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'probid_14' => 'probid',
+                    'testcaseid_15' => 'testcaseid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'testcaseid_0' => 'tc',
+                    'md5sum_input_1' => 'tc',
+                    'md5sum_output_2' => 'tc',
+                    'probid_3' => 'tc',
+                    'rank_4' => 'tc',
+                    'description_5' => 'tc',
+                    'orig_input_filename_6' => 'tc',
+                    'image_type_7' => 'tc',
+                    'sample_8' => 'tc',
+                    'deleted_9' => 'tc',
+                    'input_10' => 'tcc',
+                    'output_11' => 'tcc',
+                    'image_12' => 'tcc',
+                    'image_thumb_13' => 'tcc',
+                    'probid_14' => 'tc',
+                    'testcaseid_15' => 'tcc',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'testcaseid_0' => 'App\\Entity\\Testcase',
+                    'md5sum_input_1' => 'App\\Entity\\Testcase',
+                    'md5sum_output_2' => 'App\\Entity\\Testcase',
+                    'probid_3' => 'App\\Entity\\Testcase',
+                    'rank_4' => 'App\\Entity\\Testcase',
+                    'description_5' => 'App\\Entity\\Testcase',
+                    'orig_input_filename_6' => 'App\\Entity\\Testcase',
+                    'image_type_7' => 'App\\Entity\\Testcase',
+                    'sample_8' => 'App\\Entity\\Testcase',
+                    'deleted_9' => 'App\\Entity\\Testcase',
+                    'input_10' => 'App\\Entity\\TestcaseContent',
+                    'output_11' => 'App\\Entity\\TestcaseContent',
+                    'image_12' => 'App\\Entity\\TestcaseContent',
+                    'image_thumb_13' => 'App\\Entity\\TestcaseContent',
+                ],
+            ],
+            'isIdentifierColumn' => [
+                2 => [
+                    'tcc' => [
+                        'testcaseid_15' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

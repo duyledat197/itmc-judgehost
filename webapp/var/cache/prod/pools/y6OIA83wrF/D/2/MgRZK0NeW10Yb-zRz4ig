@@ -1,0 +1,139 @@
+<?php //App.Entity.User
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\Regex'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Regex')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Email'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Email')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Ip'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Ip')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\User',
+                'username',
+                3 => 'email',
+                5 => 'ipAddress',
+            ],
+            'defaultGroup' => [
+                'User',
+            ],
+            'members' => [
+                [
+                    'username' => [
+                        $o[1],
+                    ],
+                    'email' => [
+                        $o[3],
+                    ],
+                    'ipAddress' => [
+                        $o[5],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'username' => $o[1],
+                    'email' => $o[3],
+                    'ipAddress' => $o[5],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[7],
+                ],
+                [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                ],
+                5 => [
+                    $o[6],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[7],
+                    ],
+                    'User' => [
+                        $o[7],
+                    ],
+                ],
+                [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'User' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'Default' => [
+                        $o[4],
+                    ],
+                    'User' => [
+                        $o[4],
+                    ],
+                ],
+                5 => [
+                    'Default' => [
+                        $o[6],
+                    ],
+                    'User' => [
+                        $o[6],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\User',
+                3 => 'App\\Entity\\User',
+                5 => 'App\\Entity\\User',
+            ],
+            'property' => [
+                1 => 'username',
+                3 => 'email',
+                5 => 'ipAddress',
+            ],
+            'message' => [
+                2 => 'Only alphanumeric characters and _-@. are allowed',
+                7 => 'This username is already in use.',
+            ],
+            'pattern' => [
+                2 => '/^[a-z0-9@._-]+$/i',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'User',
+                ],
+                4 => [
+                    'Default',
+                    'User',
+                ],
+                6 => [
+                    'Default',
+                    'User',
+                ],
+                [
+                    'Default',
+                    'User',
+                ],
+            ],
+            'version' => [
+                6 => 'all',
+            ],
+            'fields' => [
+                7 => 'username',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

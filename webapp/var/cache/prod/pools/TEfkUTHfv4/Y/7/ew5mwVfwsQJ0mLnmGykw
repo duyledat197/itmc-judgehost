@@ -1,0 +1,35 @@
+<?php //%255BApp%255CEntity%255CLanguage%2524filterCompilerFiles%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Groups')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'filter_compiler_files',
+            ],
+            'type' => [
+                'boolean',
+            ],
+            'options' => [
+                [
+                    'comment' => 'Whether to filter the files passed to the compiler by the extension list.',
+                    'default' => '1',
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'Nonstrict',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

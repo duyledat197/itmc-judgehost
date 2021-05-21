@@ -1,0 +1,90 @@
+<?php //%255Bb0f65d3b62319f8cb09919a4312116c3%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'judgingid' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT j0_.runid AS runid_0, j0_.judgingid AS judgingid_1, j0_.testcaseid AS testcaseid_2, j0_.runresult AS runresult_3, j0_.runtime AS runtime_4, j0_.endtime AS endtime_5, j0_.judgingid AS judgingid_6, j0_.testcaseid AS testcaseid_7 FROM judging_run j0_ INNER JOIN testcase t1_ ON j0_.testcaseid = t1_.testcaseid WHERE j0_.judgingid = ? ORDER BY t1_.rank ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'r' => 'App\\Entity\\JudgingRun',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'runid_0' => 'runid',
+                    'judgingid_1' => 'judgingid',
+                    'testcaseid_2' => 'testcaseid',
+                    'runresult_3' => 'runresult',
+                    'runtime_4' => 'runtime',
+                    'endtime_5' => 'endtime',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'judgingid_6' => 'integer',
+                    'testcaseid_7' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'r' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'judgingid_6' => 'judgingid',
+                    'testcaseid_7' => 'testcaseid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'runid_0' => 'r',
+                    'judgingid_1' => 'r',
+                    'testcaseid_2' => 'r',
+                    'runresult_3' => 'r',
+                    'runtime_4' => 'r',
+                    'endtime_5' => 'r',
+                    'judgingid_6' => 'r',
+                    'testcaseid_7' => 'r',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'runid_0' => 'App\\Entity\\JudgingRun',
+                    'judgingid_1' => 'App\\Entity\\JudgingRun',
+                    'testcaseid_2' => 'App\\Entity\\JudgingRun',
+                    'runresult_3' => 'App\\Entity\\JudgingRun',
+                    'runtime_4' => 'App\\Entity\\JudgingRun',
+                    'endtime_5' => 'App\\Entity\\JudgingRun',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

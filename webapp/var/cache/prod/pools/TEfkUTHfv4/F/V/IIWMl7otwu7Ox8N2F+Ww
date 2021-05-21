@@ -1,0 +1,60 @@
+<?php //%255BApp%255CEntity%255CTeamCategory%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone ($p['JMS\\Serializer\\Annotation\\VirtualProperty'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\VirtualProperty')),
+        clone ($p['JMS\\Serializer\\Annotation\\Type'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Type')),
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\Type'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'team_category',
+                'sortorder',
+                'hidden',
+                'boolean',
+                'icpc_id',
+                'string',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'options' => [
+                1 => [
+                    'collate' => 'utf8mb4_unicode_ci',
+                    'charset' => 'utf8mb4',
+                    'comment' => 'Categories for teams (e.g.: participants, observers, ...)',
+                ],
+                3 => [
+                    $o[4],
+                ],
+                5 => [
+                    $o[6],
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'sortorder',
+                ],
+            ],
+            'exp' => [
+                3 => '!object.getVisible()',
+                5 => 'object.getCategoryid()',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[3],
+        $o[5],
+    ],
+    []
+); }];

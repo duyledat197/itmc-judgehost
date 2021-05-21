@@ -1,0 +1,81 @@
+<?php //App.Entity.TeamAffiliation
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['App\\Validator\\Constraints\\Country'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\Country')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\TeamAffiliation',
+                'country',
+            ],
+            'defaultGroup' => [
+                'TeamAffiliation',
+            ],
+            'members' => [
+                [
+                    'country' => [
+                        $o[1],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'country' => $o[1],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[3],
+                    ],
+                    'TeamAffiliation' => [
+                        $o[3],
+                    ],
+                ],
+                [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'TeamAffiliation' => [
+                        $o[2],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\TeamAffiliation',
+            ],
+            'property' => [
+                1 => 'country',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'TeamAffiliation',
+                ],
+                [
+                    'Default',
+                    'TeamAffiliation',
+                ],
+            ],
+            'fields' => [
+                3 => 'externalid',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

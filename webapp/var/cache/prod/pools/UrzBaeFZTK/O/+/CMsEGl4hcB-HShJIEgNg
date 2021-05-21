@@ -1,0 +1,67 @@
+<?php //%255B426abd672650ab7325b91acfe9cd2f8d%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'team' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT r0_.roleid AS roleid_0, r0_.role AS role_1, r0_.description AS description_2 FROM role r0_ WHERE r0_.role = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'r' => 'App\\Entity\\Role',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'roleid_0' => 'roleid',
+                    'role_1' => 'dj_role',
+                    'description_2' => 'description',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'r' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'roleid_0' => 'r',
+                    'role_1' => 'r',
+                    'description_2' => 'r',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'roleid_0' => 'App\\Entity\\Role',
+                    'role_1' => 'App\\Entity\\Role',
+                    'description_2' => 'App\\Entity\\Role',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

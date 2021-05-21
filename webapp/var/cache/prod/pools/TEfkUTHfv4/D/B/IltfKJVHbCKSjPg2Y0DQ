@@ -1,0 +1,19 @@
+<?php //%255BApp%255CHelpers%255CContestProblemWrapper%2524testDataCount%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['JMS\\Serializer\\Annotation\\SerializedName'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\SerializedName')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'test_data_count',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

@@ -1,0 +1,99 @@
+<?php //%255BApp%255CEntity%255CClarification%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone ($p['Doctrine\\ORM\\Mapping\\UniqueConstraint'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\UniqueConstraint')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                1 => 'clarification',
+                'respid',
+                'probid',
+                'cid',
+                'cid_2',
+                'sender',
+                'recipient',
+                'externalid',
+            ],
+            'indexes' => [
+                1 => [
+                    $o[2],
+                    $o[3],
+                    $o[4],
+                    $o[5],
+                    $o[6],
+                    $o[7],
+                ],
+            ],
+            'uniqueConstraints' => [
+                1 => [
+                    $o[8],
+                ],
+            ],
+            'options' => [
+                1 => [
+                    'collate' => 'utf8mb4_unicode_ci',
+                    'charset' => 'utf8mb4',
+                    'comment' => 'Clarification requests by teams and responses by the jury',
+                ],
+                8 => [
+                    'lengths' => [
+                        null,
+                        '190',
+                    ],
+                ],
+            ],
+            'columns' => [
+                2 => [
+                    'respid',
+                ],
+                [
+                    'probid',
+                ],
+                [
+                    'cid',
+                ],
+                [
+                    'cid',
+                    'answered',
+                    'submittime',
+                ],
+                [
+                    'sender',
+                ],
+                [
+                    'recipient',
+                ],
+                [
+                    'cid',
+                    'externalid',
+                ],
+            ],
+            'fields' => [
+                9 => 'externalid',
+            ],
+            'groups' => [
+                9 => [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[9],
+    ],
+    []
+); }];

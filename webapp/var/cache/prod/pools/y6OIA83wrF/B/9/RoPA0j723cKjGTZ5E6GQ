@@ -1,0 +1,190 @@
+<?php //App.Entity.Language
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotEqualTo'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotEqualTo')),
+        clone ($p['App\\Validator\\Constraints\\Identifier'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\Identifier')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\GreaterThan'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\GreaterThan')),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone $p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Language',
+                'langid',
+                5 => 'name',
+                7 => 'extensions',
+                9 => 'timeFactor',
+            ],
+            'defaultGroup' => [
+                'Language',
+            ],
+            'members' => [
+                [
+                    'langid' => [
+                        $o[1],
+                    ],
+                    'name' => [
+                        $o[5],
+                    ],
+                    'extensions' => [
+                        $o[7],
+                    ],
+                    'timeFactor' => [
+                        $o[9],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'langid' => $o[1],
+                    'name' => $o[5],
+                    'extensions' => $o[7],
+                    'timeFactor' => $o[9],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[12],
+                    $o[13],
+                ],
+                [
+                    $o[2],
+                    $o[3],
+                    $o[4],
+                ],
+                5 => [
+                    $o[6],
+                ],
+                7 => [
+                    $o[8],
+                ],
+                9 => [
+                    $o[10],
+                    $o[11],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[12],
+                        $o[13],
+                    ],
+                    'Language' => [
+                        $o[12],
+                        $o[13],
+                    ],
+                ],
+                [
+                    'Default' => [
+                        $o[2],
+                        $o[3],
+                        $o[4],
+                    ],
+                    'Language' => [
+                        $o[2],
+                        $o[3],
+                        $o[4],
+                    ],
+                ],
+                5 => [
+                    'Default' => [
+                        $o[6],
+                    ],
+                    'Language' => [
+                        $o[6],
+                    ],
+                ],
+                7 => [
+                    'Default' => [
+                        $o[8],
+                    ],
+                    'Language' => [
+                        $o[8],
+                    ],
+                ],
+                9 => [
+                    'Default' => [
+                        $o[10],
+                        $o[11],
+                    ],
+                    'Language' => [
+                        $o[10],
+                        $o[11],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Language',
+                5 => 'App\\Entity\\Language',
+                7 => 'App\\Entity\\Language',
+                9 => 'App\\Entity\\Language',
+            ],
+            'property' => [
+                1 => 'langid',
+                5 => 'name',
+                7 => 'extensions',
+                9 => 'timeFactor',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Language',
+                ],
+                [
+                    'Default',
+                    'Language',
+                ],
+                [
+                    'Default',
+                    'Language',
+                ],
+                6 => [
+                    'Default',
+                    'Language',
+                ],
+                8 => [
+                    'Default',
+                    'Language',
+                ],
+                10 => [
+                    'Default',
+                    'Language',
+                ],
+                [
+                    'Default',
+                    'Language',
+                ],
+                [
+                    'Default',
+                    'Language',
+                ],
+                [
+                    'Default',
+                    'Language',
+                ],
+            ],
+            'value' => [
+                3 => 'add',
+                10 => 0,
+            ],
+            'fields' => [
+                12 => 'langid',
+                'externalid',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

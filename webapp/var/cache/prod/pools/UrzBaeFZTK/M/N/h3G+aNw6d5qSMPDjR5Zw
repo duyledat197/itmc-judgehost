@@ -1,0 +1,160 @@
+<?php //%255B5693ce09406d6e36109bae314606ac8c%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT u0_.userid AS userid_0, u0_.username AS username_1, u0_.name AS name_2, u0_.email AS email_3, u0_.last_login AS last_login_4, u0_.first_login AS first_login_5, u0_.last_ip_address AS last_ip_address_6, u0_.password AS password_7, u0_.ip_address AS ip_address_8, u0_.enabled AS enabled_9, u0_.teamid AS teamid_10, r1_.roleid AS roleid_11, r1_.role AS role_12, r1_.description AS description_13, t2_.teamid AS teamid_14, t2_.icpcid AS icpcid_15, t2_.name AS name_16, t2_.display_name AS display_name_17, t2_.categoryid AS categoryid_18, t2_.affilid AS affilid_19, t2_.enabled AS enabled_20, t2_.members AS members_21, t2_.room AS room_22, t2_.comments AS comments_23, t2_.judging_last_started AS judging_last_started_24, t2_.penalty AS penalty_25, u0_.teamid AS teamid_26, t2_.affilid AS affilid_27, t2_.categoryid AS categoryid_28 FROM user u0_ LEFT JOIN userrole u3_ ON u0_.userid = u3_.userid LEFT JOIN role r1_ ON r1_.roleid = u3_.roleid LEFT JOIN team t2_ ON u0_.teamid = t2_.teamid ORDER BY u0_.username ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'u' => 'App\\Entity\\User',
+                    'r' => 'App\\Entity\\Role',
+                    't' => 'App\\Entity\\Team',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'r' => 'user_roles',
+                    't' => 'team',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'r' => 'u',
+                    't' => 'u',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'userid_0' => 'userid',
+                    'username_1' => 'username',
+                    'name_2' => 'name',
+                    'email_3' => 'email',
+                    'last_login_4' => 'last_login',
+                    'first_login_5' => 'first_login',
+                    'last_ip_address_6' => 'last_ip_address',
+                    'password_7' => 'password',
+                    'ip_address_8' => 'ipAddress',
+                    'enabled_9' => 'enabled',
+                    'teamid_10' => 'teamid',
+                    'roleid_11' => 'roleid',
+                    'role_12' => 'dj_role',
+                    'description_13' => 'description',
+                    'teamid_14' => 'teamid',
+                    'icpcid_15' => 'icpcid',
+                    'name_16' => 'name',
+                    'display_name_17' => 'display_name',
+                    'categoryid_18' => 'categoryid',
+                    'affilid_19' => 'affilid',
+                    'enabled_20' => 'enabled',
+                    'members_21' => 'members',
+                    'room_22' => 'room',
+                    'comments_23' => 'comments',
+                    'judging_last_started_24' => 'judging_last_started',
+                    'penalty_25' => 'penalty',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'teamid_26' => 'integer',
+                    'affilid_27' => 'integer',
+                    'categoryid_28' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'u' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'teamid_26' => 'teamid',
+                    'affilid_27' => 'affilid',
+                    'categoryid_28' => 'categoryid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'userid_0' => 'u',
+                    'username_1' => 'u',
+                    'name_2' => 'u',
+                    'email_3' => 'u',
+                    'last_login_4' => 'u',
+                    'first_login_5' => 'u',
+                    'last_ip_address_6' => 'u',
+                    'password_7' => 'u',
+                    'ip_address_8' => 'u',
+                    'enabled_9' => 'u',
+                    'teamid_10' => 'u',
+                    'roleid_11' => 'r',
+                    'role_12' => 'r',
+                    'description_13' => 'r',
+                    'teamid_14' => 't',
+                    'icpcid_15' => 't',
+                    'name_16' => 't',
+                    'display_name_17' => 't',
+                    'categoryid_18' => 't',
+                    'affilid_19' => 't',
+                    'enabled_20' => 't',
+                    'members_21' => 't',
+                    'room_22' => 't',
+                    'comments_23' => 't',
+                    'judging_last_started_24' => 't',
+                    'penalty_25' => 't',
+                    'teamid_26' => 'u',
+                    'affilid_27' => 't',
+                    'categoryid_28' => 't',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'userid_0' => 'App\\Entity\\User',
+                    'username_1' => 'App\\Entity\\User',
+                    'name_2' => 'App\\Entity\\User',
+                    'email_3' => 'App\\Entity\\User',
+                    'last_login_4' => 'App\\Entity\\User',
+                    'first_login_5' => 'App\\Entity\\User',
+                    'last_ip_address_6' => 'App\\Entity\\User',
+                    'password_7' => 'App\\Entity\\User',
+                    'ip_address_8' => 'App\\Entity\\User',
+                    'enabled_9' => 'App\\Entity\\User',
+                    'teamid_10' => 'App\\Entity\\User',
+                    'roleid_11' => 'App\\Entity\\Role',
+                    'role_12' => 'App\\Entity\\Role',
+                    'description_13' => 'App\\Entity\\Role',
+                    'teamid_14' => 'App\\Entity\\Team',
+                    'icpcid_15' => 'App\\Entity\\Team',
+                    'name_16' => 'App\\Entity\\Team',
+                    'display_name_17' => 'App\\Entity\\Team',
+                    'categoryid_18' => 'App\\Entity\\Team',
+                    'affilid_19' => 'App\\Entity\\Team',
+                    'enabled_20' => 'App\\Entity\\Team',
+                    'members_21' => 'App\\Entity\\Team',
+                    'room_22' => 'App\\Entity\\Team',
+                    'comments_23' => 'App\\Entity\\Team',
+                    'judging_last_started_24' => 'App\\Entity\\Team',
+                    'penalty_25' => 'App\\Entity\\Team',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

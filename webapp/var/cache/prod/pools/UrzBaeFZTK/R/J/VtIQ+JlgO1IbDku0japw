@@ -1,0 +1,124 @@
+<?php //%255B86cccded700d8bb883864b8c0842ac37%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                        1,
+                    ],
+                    'clarId' => [
+                        2,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.clarid AS clarid_0, c0_.externalid AS externalid_1, c0_.cid AS cid_2, c0_.respid AS respid_3, c0_.submittime AS submittime_4, c0_.sender AS sender_5, c0_.recipient AS recipient_6, c0_.jury_member AS jury_member_7, c0_.probid AS probid_8, c0_.category AS category_9, c0_.queue AS queue_10, c0_.body AS body_11, c0_.answered AS answered_12, c0_.probid AS probid_13, c0_.cid AS cid_14, c0_.respid AS respid_15, c0_.sender AS sender_16, c0_.recipient AS recipient_17 FROM clarification c0_ LEFT JOIN problem p1_ ON c0_.probid = p1_.probid LEFT JOIN contestproblem c2_ ON p1_.probid = c2_.probid AND (c2_.cid = ?) WHERE c0_.cid = ? AND c0_.clarid = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'c' => 'App\\Entity\\Clarification',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'clarid_0' => 'clarid',
+                    'externalid_1' => 'externalid',
+                    'cid_2' => 'cid',
+                    'respid_3' => 'respid',
+                    'submittime_4' => 'submittime',
+                    'sender_5' => 'sender_id',
+                    'recipient_6' => 'recipient_id',
+                    'jury_member_7' => 'jury_member',
+                    'probid_8' => 'probid',
+                    'category_9' => 'category',
+                    'queue_10' => 'queue',
+                    'body_11' => 'body',
+                    'answered_12' => 'answered',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'probid_13' => 'integer',
+                    'cid_14' => 'integer',
+                    'respid_15' => 'integer',
+                    'sender_16' => 'integer',
+                    'recipient_17' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'c' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'probid_13' => 'probid',
+                    'cid_14' => 'cid',
+                    'respid_15' => 'respid',
+                    'sender_16' => 'sender',
+                    'recipient_17' => 'recipient',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'clarid_0' => 'c',
+                    'externalid_1' => 'c',
+                    'cid_2' => 'c',
+                    'respid_3' => 'c',
+                    'submittime_4' => 'c',
+                    'sender_5' => 'c',
+                    'recipient_6' => 'c',
+                    'jury_member_7' => 'c',
+                    'probid_8' => 'c',
+                    'category_9' => 'c',
+                    'queue_10' => 'c',
+                    'body_11' => 'c',
+                    'answered_12' => 'c',
+                    'probid_13' => 'c',
+                    'cid_14' => 'c',
+                    'respid_15' => 'c',
+                    'sender_16' => 'c',
+                    'recipient_17' => 'c',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'clarid_0' => 'App\\Entity\\Clarification',
+                    'externalid_1' => 'App\\Entity\\Clarification',
+                    'cid_2' => 'App\\Entity\\Clarification',
+                    'respid_3' => 'App\\Entity\\Clarification',
+                    'submittime_4' => 'App\\Entity\\Clarification',
+                    'sender_5' => 'App\\Entity\\Clarification',
+                    'recipient_6' => 'App\\Entity\\Clarification',
+                    'jury_member_7' => 'App\\Entity\\Clarification',
+                    'probid_8' => 'App\\Entity\\Clarification',
+                    'category_9' => 'App\\Entity\\Clarification',
+                    'queue_10' => 'App\\Entity\\Clarification',
+                    'body_11' => 'App\\Entity\\Clarification',
+                    'answered_12' => 'App\\Entity\\Clarification',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

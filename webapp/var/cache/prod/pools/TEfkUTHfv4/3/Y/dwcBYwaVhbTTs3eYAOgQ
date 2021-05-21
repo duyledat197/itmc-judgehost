@@ -1,0 +1,173 @@
+<?php //%255BApp%255CController%255CAPI%255CJudgehostController%2523internalErrorAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/internal-error',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_JUDGEHOST',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'The ID of the created internal error',
+                6 => 'The description of the internal error',
+                8 => 'The log of the judgehost',
+                10 => 'The object to disable in JSON format',
+                12 => 'The contest ID associated with this internal error',
+                14 => 'The ID of the judging that was being worked on',
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            '_context' => [
+                2 => $o[5],
+                $o[4],
+                6 => $o[7],
+                8 => $o[9],
+                10 => $o[11],
+                12 => $o[13],
+                14 => $o[15],
+            ],
+            'type' => [
+                3 => 'integer',
+                6 => 'string',
+                8 => 'string',
+                10 => 'string',
+                12 => 'integer',
+                14 => 'integer',
+            ],
+            'filename' => [
+                4 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                13 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 827,
+                827,
+                7 => 827,
+                9 => 827,
+                11 => 827,
+                13 => 827,
+                15 => 827,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+                11 => 'Annotation',
+                13 => 'Annotation',
+                15 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+                11 => 'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                13 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[14],
+                ],
+            ],
+            'name' => [
+                6 => 'description',
+                8 => 'judgehostlog',
+                10 => 'disabled',
+                12 => 'cid',
+                14 => 'judgingid',
+            ],
+            'in' => [
+                6 => 'formData',
+                8 => 'formData',
+                10 => 'formData',
+                12 => 'formData',
+                14 => 'formData',
+            ],
+            'required' => [
+                6 => true,
+                8 => true,
+                10 => true,
+                12 => false,
+                14 => false,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[6],
+        $o[8],
+        $o[10],
+        $o[12],
+        $o[14],
+    ],
+    []
+); }];

@@ -1,0 +1,108 @@
+<?php //%255BApp%255CController%255CAPI%255CProblemController%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Route')),
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\Prefix'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Prefix')),
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\NamePrefix'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\NamePrefix')),
+        clone ($p['Swagger\\Annotations\\Tag'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Tag')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Response'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/v4/contests/{cid}/problems',
+            ],
+            'defaults' => [
+                [
+                    '_format' => 'json',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'value' => [
+                1 => '/api/contests/{cid}/problems',
+                'problems_',
+            ],
+            'name' => [
+                3 => 'Problems',
+            ],
+            '_context' => [
+                3 => $o[4],
+                5 => $o[6],
+                7 => $o[8],
+                9 => $o[10],
+            ],
+            'filename' => [
+                4 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 827,
+                6 => 827,
+                8 => 827,
+                10 => 827,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                8 => 'Annotation',
+                10 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                8 => 'DocParser',
+                10 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                10 => [
+                    $o[9],
+                ],
+            ],
+            'ref' => [
+                5 => '#/parameters/cid',
+                7 => '#/definitions/NotFound',
+                9 => '#/definitions/Unauthorized',
+            ],
+            'response' => [
+                7 => '404',
+                9 => '401',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[5],
+        $o[7],
+        $o[9],
+    ],
+    []
+); }];

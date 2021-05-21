@@ -1,0 +1,28 @@
+<?php //%255BApp%255CEntity%255CRejudging%2524valid%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'valid',
+            ],
+            'type' => [
+                'boolean',
+            ],
+            'options' => [
+                [
+                    'comment' => 'Rejudging is marked as invalid if canceled',
+                    'default' => '1',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

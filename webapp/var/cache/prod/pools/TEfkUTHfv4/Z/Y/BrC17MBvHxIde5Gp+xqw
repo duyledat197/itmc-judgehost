@@ -1,0 +1,38 @@
+<?php //%255BApp%255CEntity%255CTeamCategory%2524color%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Groups')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'color',
+            ],
+            'length' => [
+                32,
+            ],
+            'nullable' => [
+                true,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Background colour on the scoreboard',
+                    'default' => 'NULL',
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'Nonstrict',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

@@ -1,0 +1,159 @@
+<?php //%255Be1392f5f76d02a463c29062789170482%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contests' => [
+                        0,
+                    ],
+                    'id' => [
+                        1,
+                    ],
+                    'correct' => [
+                        2,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT j0_.judgingid AS judgingid_0, j0_.cid AS cid_1, j0_.submitid AS submitid_2, j0_.starttime AS starttime_3, j0_.endtime AS endtime_4, j0_.result AS result_5, j0_.verified AS verified_6, j0_.jury_member AS jury_member_7, j0_.verify_comment AS verify_comment_8, j0_.valid AS valid_9, j0_.output_compile AS output_compile_10, j0_.seen AS seen_11, j0_.rejudgingid AS rejudgingid_12, j0_.prevjudgingid AS prevjudgingid_13, j0_.judgehost AS judgehost_14, s1_.submitid AS submitid_15, s1_.externalid AS externalid_16, s1_.origsubmitid AS origsubmitid_17, s1_.cid AS cid_18, s1_.teamid AS teamid_19, s1_.probid AS probid_20, s1_.langid AS langid_21, s1_.submittime AS submittime_22, s1_.valid AS valid_23, s1_.rejudgingid AS rejudgingid_24, s1_.expected_results AS expected_results_25, s1_.entry_point AS entry_point_26, s1_.judgehost AS judgehost_27 FROM judging j0_ LEFT JOIN submission s1_ ON j0_.submitid = s1_.submitid WHERE j0_.cid IN (?) AND j0_.valid = 1 AND j0_.judgehost = ? AND j0_.result <> ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'j' => 'App\\Entity\\Judging',
+                    's' => 'App\\Entity\\Submission',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    's' => 'submission',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    's' => 'j',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'judgingid_0' => 'judgingid',
+                    'cid_1' => 'cid',
+                    'submitid_2' => 'submitid',
+                    'starttime_3' => 'starttime',
+                    'endtime_4' => 'endtime',
+                    'result_5' => 'result',
+                    'verified_6' => 'verified',
+                    'jury_member_7' => 'jury_member',
+                    'verify_comment_8' => 'verify_comment',
+                    'valid_9' => 'valid',
+                    'output_compile_10' => 'output_compile',
+                    'seen_11' => 'seen',
+                    'rejudgingid_12' => 'rejudgingid',
+                    'prevjudgingid_13' => 'prevjudgingid',
+                    'judgehost_14' => 'judgehost_name',
+                    'submitid_15' => 'submitid',
+                    'externalid_16' => 'externalid',
+                    'origsubmitid_17' => 'origsubmitid',
+                    'cid_18' => 'cid',
+                    'teamid_19' => 'teamid',
+                    'probid_20' => 'probid',
+                    'langid_21' => 'langid',
+                    'submittime_22' => 'submittime',
+                    'valid_23' => 'valid',
+                    'rejudgingid_24' => 'rejudgingid',
+                    'expected_results_25' => 'expected_results',
+                    'entry_point_26' => 'entry_point',
+                    'judgehost_27' => 'judgehost_as_string',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'j' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'judgingid_0' => 'j',
+                    'cid_1' => 'j',
+                    'submitid_2' => 'j',
+                    'starttime_3' => 'j',
+                    'endtime_4' => 'j',
+                    'result_5' => 'j',
+                    'verified_6' => 'j',
+                    'jury_member_7' => 'j',
+                    'verify_comment_8' => 'j',
+                    'valid_9' => 'j',
+                    'output_compile_10' => 'j',
+                    'seen_11' => 'j',
+                    'rejudgingid_12' => 'j',
+                    'prevjudgingid_13' => 'j',
+                    'judgehost_14' => 'j',
+                    'submitid_15' => 's',
+                    'externalid_16' => 's',
+                    'origsubmitid_17' => 's',
+                    'cid_18' => 's',
+                    'teamid_19' => 's',
+                    'probid_20' => 's',
+                    'langid_21' => 's',
+                    'submittime_22' => 's',
+                    'valid_23' => 's',
+                    'rejudgingid_24' => 's',
+                    'expected_results_25' => 's',
+                    'entry_point_26' => 's',
+                    'judgehost_27' => 's',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'judgingid_0' => 'App\\Entity\\Judging',
+                    'cid_1' => 'App\\Entity\\Judging',
+                    'submitid_2' => 'App\\Entity\\Judging',
+                    'starttime_3' => 'App\\Entity\\Judging',
+                    'endtime_4' => 'App\\Entity\\Judging',
+                    'result_5' => 'App\\Entity\\Judging',
+                    'verified_6' => 'App\\Entity\\Judging',
+                    'jury_member_7' => 'App\\Entity\\Judging',
+                    'verify_comment_8' => 'App\\Entity\\Judging',
+                    'valid_9' => 'App\\Entity\\Judging',
+                    'output_compile_10' => 'App\\Entity\\Judging',
+                    'seen_11' => 'App\\Entity\\Judging',
+                    'rejudgingid_12' => 'App\\Entity\\Judging',
+                    'prevjudgingid_13' => 'App\\Entity\\Judging',
+                    'judgehost_14' => 'App\\Entity\\Judging',
+                    'submitid_15' => 'App\\Entity\\Submission',
+                    'externalid_16' => 'App\\Entity\\Submission',
+                    'origsubmitid_17' => 'App\\Entity\\Submission',
+                    'cid_18' => 'App\\Entity\\Submission',
+                    'teamid_19' => 'App\\Entity\\Submission',
+                    'probid_20' => 'App\\Entity\\Submission',
+                    'langid_21' => 'App\\Entity\\Submission',
+                    'submittime_22' => 'App\\Entity\\Submission',
+                    'valid_23' => 'App\\Entity\\Submission',
+                    'rejudgingid_24' => 'App\\Entity\\Submission',
+                    'expected_results_25' => 'App\\Entity\\Submission',
+                    'entry_point_26' => 'App\\Entity\\Submission',
+                    'judgehost_27' => 'App\\Entity\\Submission',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

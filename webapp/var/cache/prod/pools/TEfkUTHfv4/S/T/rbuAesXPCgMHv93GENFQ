@@ -1,0 +1,131 @@
+<?php //%255BApp%255CController%255CAPI%255CJudgehostController%2523getJudgehostsAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone ($p['Swagger\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Items')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_JURY',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'The judgehosts',
+                10 => 'Only show the judgehost with the given hostname',
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            '_context' => [
+                2 => $o[9],
+                $o[8],
+                $o[7],
+                $o[6],
+                10 => $o[11],
+            ],
+            'type' => [
+                3 => 'array',
+                5 => 'App\\Entity\\Judgehost',
+                10 => 'string',
+            ],
+            'items' => [
+                3 => $o[4],
+            ],
+            'ref' => [
+                4 => $o[5],
+            ],
+            'filename' => [
+                6 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                6 => 827,
+                827,
+                827,
+                827,
+                11 => 827,
+            ],
+            'method' => [
+                6 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+            ],
+            'class' => [
+                6 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+            ],
+            'namespace' => [
+                6 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                6 => [
+                    $o[5],
+                ],
+                [
+                    $o[4],
+                ],
+                [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                11 => [
+                    $o[10],
+                ],
+            ],
+            'name' => [
+                10 => 'hostname',
+            ],
+            'in' => [
+                10 => 'query',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[10],
+    ],
+    []
+); }];

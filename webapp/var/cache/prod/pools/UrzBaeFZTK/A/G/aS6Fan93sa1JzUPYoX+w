@@ -1,0 +1,185 @@
+<?php //%255BApp%255CEntity%255CJudgingRunOutput%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\JudgingRunOutput',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\JudgingRunOutput',
+            ],
+            'identifier' => [
+                [
+                    'run',
+                ],
+            ],
+            'fieldMappings' => [
+                [
+                    'output_run' => [
+                        'fieldName' => 'output_run',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Output of running the program',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'output_run',
+                    ],
+                    'output_diff' => [
+                        'fieldName' => 'output_diff',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Diffing the program output and testcase output',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'output_diff',
+                    ],
+                    'output_error' => [
+                        'fieldName' => 'output_error',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Standard error output of the program',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'output_error',
+                    ],
+                    'output_system' => [
+                        'fieldName' => 'output_system',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Judging system output',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'output_system',
+                    ],
+                    'metadata' => [
+                        'fieldName' => 'metadata',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Judging metadata',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'metadata',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'output_run' => 'output_run',
+                    'output_diff' => 'output_diff',
+                    'output_error' => 'output_error',
+                    'output_system' => 'output_system',
+                    'metadata' => 'metadata',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'output_run' => 'output_run',
+                    'output_diff' => 'output_diff',
+                    'output_error' => 'output_error',
+                    'output_system' => 'output_system',
+                    'metadata' => 'metadata',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'judging_run_output',
+                    'indexes' => [
+                        'runid' => [
+                            'columns' => [
+                                'runid',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Stores output of judging run',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'run' => [
+                        'fieldName' => 'run',
+                        'id' => true,
+                        'joinColumns' => [
+                            [
+                                'name' => 'runid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'runid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'output',
+                        'targetEntity' => 'App\\Entity\\JudgingRun',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\JudgingRunOutput',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'runid' => 'runid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'runid' => 'runid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'runid' => 'runid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'containsForeignIdentifier' => [
+                true,
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

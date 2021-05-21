@@ -1,0 +1,95 @@
+<?php //%255B19c0c6b910a507450c78dbc8ed29df1e%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT l0_.langid AS langid_0, l0_.externalid AS externalid_1, l0_.name AS name_2, l0_.extensions AS extensions_3, l0_.filter_compiler_files AS filter_compiler_files_4, l0_.allow_submit AS allow_submit_5, l0_.allow_judge AS allow_judge_6, l0_.time_factor AS time_factor_7, l0_.compile_script AS compile_script_8, l0_.require_entry_point AS require_entry_point_9, l0_.entry_point_description AS entry_point_description_10, l0_.compile_script AS compile_script_11 FROM language l0_ WHERE l0_.allow_submit = 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'l' => 'App\\Entity\\Language',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'langid_0' => 'langid',
+                    'externalid_1' => 'externalid',
+                    'name_2' => 'name',
+                    'extensions_3' => 'extensions',
+                    'filter_compiler_files_4' => 'filterCompilerFiles',
+                    'allow_submit_5' => 'allowSubmit',
+                    'allow_judge_6' => 'allowJudge',
+                    'time_factor_7' => 'timeFactor',
+                    'compile_script_8' => 'compile_script',
+                    'require_entry_point_9' => 'require_entry_point',
+                    'entry_point_description_10' => 'entry_point_description',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'compile_script_11' => 'string',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'l' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'compile_script_11' => 'compile_script',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'langid_0' => 'l',
+                    'externalid_1' => 'l',
+                    'name_2' => 'l',
+                    'extensions_3' => 'l',
+                    'filter_compiler_files_4' => 'l',
+                    'allow_submit_5' => 'l',
+                    'allow_judge_6' => 'l',
+                    'time_factor_7' => 'l',
+                    'compile_script_8' => 'l',
+                    'require_entry_point_9' => 'l',
+                    'entry_point_description_10' => 'l',
+                    'compile_script_11' => 'l',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'langid_0' => 'App\\Entity\\Language',
+                    'externalid_1' => 'App\\Entity\\Language',
+                    'name_2' => 'App\\Entity\\Language',
+                    'extensions_3' => 'App\\Entity\\Language',
+                    'filter_compiler_files_4' => 'App\\Entity\\Language',
+                    'allow_submit_5' => 'App\\Entity\\Language',
+                    'allow_judge_6' => 'App\\Entity\\Language',
+                    'time_factor_7' => 'App\\Entity\\Language',
+                    'compile_script_8' => 'App\\Entity\\Language',
+                    'require_entry_point_9' => 'App\\Entity\\Language',
+                    'entry_point_description_10' => 'App\\Entity\\Language',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,203 @@
+<?php //%255BApp%255CEntity%255CSubmissionFile%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\SubmissionFile',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\SubmissionFile',
+            ],
+            'identifier' => [
+                [
+                    'submitfileid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'submitfileid' => [
+                        'fieldName' => 'submitfileid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Submission file ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'submitfileid',
+                        'id' => true,
+                    ],
+                    'submitid' => [
+                        'fieldName' => 'submitid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Submission this file belongs to',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'submitid',
+                    ],
+                    'filename' => [
+                        'fieldName' => 'filename',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Filename as submitted',
+                        ],
+                        'columnName' => 'filename',
+                    ],
+                    'rank' => [
+                        'fieldName' => 'rank',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Order of the submission files, zero-indexed',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'rank',
+                    ],
+                    'sourcecode' => [
+                        'fieldName' => 'sourcecode',
+                        'type' => 'blobtext',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Full source code',
+                        ],
+                        'columnName' => 'sourcecode',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'submitfileid' => 'submitfileid',
+                    'submitid' => 'submitid',
+                    'filename' => 'filename',
+                    'rank' => 'rank',
+                    'sourcecode' => 'sourcecode',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'submitfileid' => 'submitfileid',
+                    'submitid' => 'submitid',
+                    'filename' => 'filename',
+                    'rank' => 'rank',
+                    'sourcecode' => 'sourcecode',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'submission_file',
+                    'indexes' => [
+                        'submitid' => [
+                            'columns' => [
+                                'submitid',
+                            ],
+                        ],
+                    ],
+                    'uniqueConstraints' => [
+                        'rank' => [
+                            'columns' => [
+                                'submitid',
+                                'rank',
+                            ],
+                        ],
+                        'filename' => [
+                            'columns' => [
+                                'submitid',
+                                'filename',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    null,
+                                    '190',
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Files associated to a submission',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'submission' => [
+                        'fieldName' => 'submission',
+                        'joinColumns' => [
+                            [
+                                'name' => 'submitid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'submitid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'files',
+                        'targetEntity' => 'App\\Entity\\Submission',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\SubmissionFile',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'submitid' => 'submitid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'submitid' => 'submitid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'submitid' => 'submitid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

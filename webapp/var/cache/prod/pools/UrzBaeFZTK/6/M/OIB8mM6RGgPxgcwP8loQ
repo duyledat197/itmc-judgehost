@@ -1,0 +1,342 @@
+<?php //%255BApp%255CEntity%255CScoreCache%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\AssignedGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\AssignedGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ScoreCache',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ScoreCache',
+            ],
+            'identifier' => [
+                [
+                    'contest',
+                    'team',
+                    'problem',
+                ],
+            ],
+            'fieldMappings' => [
+                [
+                    'submissions_restricted' => [
+                        'fieldName' => 'submissions_restricted',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Number of submissions made (restricted audiences)',
+                            'unsigned' => true,
+                            'default' => '0',
+                        ],
+                        'columnName' => 'submissions_restricted',
+                    ],
+                    'pending_restricted' => [
+                        'fieldName' => 'pending_restricted',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Number of submissions pending judgement (restricted audience)',
+                            'unsigned' => true,
+                            'default' => '0',
+                        ],
+                        'columnName' => 'pending_restricted',
+                    ],
+                    'is_correct_restricted' => [
+                        'fieldName' => 'is_correct_restricted',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Has there been a correct submission? (restricted audience)',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'is_correct_restricted',
+                    ],
+                    'solvetime_restricted' => [
+                        'fieldName' => 'solvetime_restricted',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Seconds into contest when problem solved (restricted audience)',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'solvetime_restricted',
+                    ],
+                    'submissions_public' => [
+                        'fieldName' => 'submissions_public',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Number of submissions made (public)',
+                            'unsigned' => true,
+                            'default' => '0',
+                        ],
+                        'columnName' => 'submissions_public',
+                    ],
+                    'pending_public' => [
+                        'fieldName' => 'pending_public',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Number of submissions pending judgement (public)',
+                            'unsigned' => true,
+                            'default' => '0',
+                        ],
+                        'columnName' => 'pending_public',
+                    ],
+                    'is_correct_public' => [
+                        'fieldName' => 'is_correct_public',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Has there been a correct submission? (public)',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'is_correct_public',
+                    ],
+                    'solvetime_public' => [
+                        'fieldName' => 'solvetime_public',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Seconds into contest when problem solved (public)',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'solvetime_public',
+                    ],
+                    'is_first_to_solve' => [
+                        'fieldName' => 'is_first_to_solve',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Is this the first solution to this problem?',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'is_first_to_solve',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'submissions_restricted' => 'submissions_restricted',
+                    'pending_restricted' => 'pending_restricted',
+                    'is_correct_restricted' => 'is_correct_restricted',
+                    'solvetime_restricted' => 'solvetime_restricted',
+                    'submissions_public' => 'submissions_public',
+                    'pending_public' => 'pending_public',
+                    'is_correct_public' => 'is_correct_public',
+                    'solvetime_public' => 'solvetime_public',
+                    'is_first_to_solve' => 'is_first_to_solve',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'submissions_restricted' => 'submissions_restricted',
+                    'pending_restricted' => 'pending_restricted',
+                    'is_correct_restricted' => 'is_correct_restricted',
+                    'solvetime_restricted' => 'solvetime_restricted',
+                    'submissions_public' => 'submissions_public',
+                    'pending_public' => 'pending_public',
+                    'is_correct_public' => 'is_correct_public',
+                    'solvetime_public' => 'solvetime_public',
+                    'is_first_to_solve' => 'is_first_to_solve',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'scorecache',
+                    'indexes' => [
+                        'cid' => [
+                            'columns' => [
+                                'cid',
+                            ],
+                        ],
+                        'teamid' => [
+                            'columns' => [
+                                'teamid',
+                            ],
+                        ],
+                        'probid' => [
+                            'columns' => [
+                                'probid',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Scoreboard cache',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'contest' => [
+                        'fieldName' => 'contest',
+                        'id' => true,
+                        'joinColumns' => [
+                            [
+                                'name' => 'cid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'cid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Contest',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ScoreCache',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'cid' => 'cid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'cid' => 'cid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'cid' => 'cid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'team' => [
+                        'fieldName' => 'team',
+                        'id' => true,
+                        'joinColumns' => [
+                            [
+                                'name' => 'teamid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'teamid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Team',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ScoreCache',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'problem' => [
+                        'fieldName' => 'problem',
+                        'id' => true,
+                        'joinColumns' => [
+                            [
+                                'name' => 'probid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'probid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Problem',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ScoreCache',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'probid' => 'probid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'probid' => 'probid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'probid' => 'probid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'isIdentifierComposite' => [
+                true,
+            ],
+            'containsForeignIdentifier' => [
+                true,
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

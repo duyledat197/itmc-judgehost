@@ -1,0 +1,307 @@
+<?php //App.Entity.Contest
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['App\\Validator\\Constraints\\Identifier'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\Identifier')),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['App\\Validator\\Constraints\\TimeString'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\TimeString')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['App\\Validator\\Constraints\\TimeString'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['App\\Validator\\Constraints\\TimeString'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['App\\Validator\\Constraints\\TimeString'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['App\\Validator\\Constraints\\TimeString'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['App\\Validator\\Constraints\\TimeString'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone $p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'],
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Callback'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Callback')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Contest',
+                'name',
+                3 => 'shortname',
+                6 => 'activatetimeString',
+                8 => 'starttimeString',
+                10 => 'freezetimeString',
+                12 => 'endtimeString',
+                14 => 'unfreezetimeString',
+                16 => 'deactivatetimeString',
+                18 => 'problems',
+                'removedIntervals',
+            ],
+            'defaultGroup' => [
+                'Contest',
+            ],
+            'members' => [
+                [
+                    'name' => [
+                        $o[1],
+                    ],
+                    'shortname' => [
+                        $o[3],
+                    ],
+                    'activatetimeString' => [
+                        $o[6],
+                    ],
+                    'starttimeString' => [
+                        $o[8],
+                    ],
+                    'freezetimeString' => [
+                        $o[10],
+                    ],
+                    'endtimeString' => [
+                        $o[12],
+                    ],
+                    'unfreezetimeString' => [
+                        $o[14],
+                    ],
+                    'deactivatetimeString' => [
+                        $o[16],
+                    ],
+                    'problems' => [
+                        $o[18],
+                    ],
+                    'removedIntervals' => [
+                        $o[19],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'name' => $o[1],
+                    'shortname' => $o[3],
+                    'activatetimeString' => $o[6],
+                    'starttimeString' => $o[8],
+                    'freezetimeString' => $o[10],
+                    'endtimeString' => $o[12],
+                    'unfreezetimeString' => $o[14],
+                    'deactivatetimeString' => $o[16],
+                    'problems' => $o[18],
+                    'removedIntervals' => $o[19],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[20],
+                    $o[21],
+                    $o[22],
+                ],
+                [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                    $o[5],
+                ],
+                6 => [
+                    $o[7],
+                ],
+                8 => [
+                    $o[9],
+                ],
+                10 => [
+                    $o[11],
+                ],
+                12 => [
+                    $o[13],
+                ],
+                14 => [
+                    $o[15],
+                ],
+                16 => [
+                    $o[17],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[20],
+                        $o[21],
+                        $o[22],
+                    ],
+                    'Contest' => [
+                        $o[20],
+                        $o[21],
+                        $o[22],
+                    ],
+                ],
+                [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'Contest' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'Default' => [
+                        $o[4],
+                        $o[5],
+                    ],
+                    'Contest' => [
+                        $o[4],
+                        $o[5],
+                    ],
+                ],
+                6 => [
+                    'Default' => [
+                        $o[7],
+                    ],
+                    'Contest' => [
+                        $o[7],
+                    ],
+                ],
+                8 => [
+                    'Default' => [
+                        $o[9],
+                    ],
+                    'Contest' => [
+                        $o[9],
+                    ],
+                ],
+                10 => [
+                    'Default' => [
+                        $o[11],
+                    ],
+                    'Contest' => [
+                        $o[11],
+                    ],
+                ],
+                12 => [
+                    'Default' => [
+                        $o[13],
+                    ],
+                    'Contest' => [
+                        $o[13],
+                    ],
+                ],
+                14 => [
+                    'Default' => [
+                        $o[15],
+                    ],
+                    'Contest' => [
+                        $o[15],
+                    ],
+                ],
+                16 => [
+                    'Default' => [
+                        $o[17],
+                    ],
+                    'Contest' => [
+                        $o[17],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Contest',
+                3 => 'App\\Entity\\Contest',
+                6 => 'App\\Entity\\Contest',
+                8 => 'App\\Entity\\Contest',
+                10 => 'App\\Entity\\Contest',
+                12 => 'App\\Entity\\Contest',
+                14 => 'App\\Entity\\Contest',
+                16 => 'App\\Entity\\Contest',
+                18 => 'App\\Entity\\Contest',
+                'App\\Entity\\Contest',
+            ],
+            'property' => [
+                1 => 'name',
+                3 => 'shortname',
+                6 => 'activatetimeString',
+                8 => 'starttimeString',
+                10 => 'freezetimeString',
+                12 => 'endtimeString',
+                14 => 'unfreezetimeString',
+                16 => 'deactivatetimeString',
+                18 => 'problems',
+                'removedIntervals',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Contest',
+                ],
+                4 => [
+                    'Default',
+                    'Contest',
+                ],
+                [
+                    'Default',
+                    'Contest',
+                ],
+                7 => [
+                    'Default',
+                    'Contest',
+                ],
+                9 => [
+                    'Default',
+                    'Contest',
+                ],
+                11 => [
+                    'Default',
+                    'Contest',
+                ],
+                13 => [
+                    'Default',
+                    'Contest',
+                ],
+                15 => [
+                    'Default',
+                    'Contest',
+                ],
+                17 => [
+                    'Default',
+                    'Contest',
+                ],
+                20 => [
+                    'Default',
+                    'Contest',
+                ],
+                [
+                    'Default',
+                    'Contest',
+                ],
+                [
+                    'Default',
+                    'Contest',
+                ],
+            ],
+            'relativeIsPositive' => [
+                7 => false,
+            ],
+            'allowRelative' => [
+                9 => false,
+            ],
+            'cascadingStrategy' => [
+                18 => 2,
+                2,
+            ],
+            'traversalStrategy' => [
+                18 => 1,
+                1,
+            ],
+            'fields' => [
+                20 => 'shortname',
+                'externalid',
+            ],
+            'callback' => [
+                22 => 'validate',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

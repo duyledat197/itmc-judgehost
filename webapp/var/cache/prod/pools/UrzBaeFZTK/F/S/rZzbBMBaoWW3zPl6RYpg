@@ -1,0 +1,76 @@
+<?php //%255B101a02ca7e5dee4fbde35b618e6979fb%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'categories' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.affilid AS affilid_0, t0_.externalid AS externalid_1, t0_.shortname AS shortname_2, t0_.name AS name_3, t0_.country AS country_4, t0_.comments AS comments_5 FROM team_affiliation t0_ INNER JOIN team t1_ ON t0_.affilid = t1_.affilid WHERE t1_.categoryid IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'a' => 'App\\Entity\\TeamAffiliation',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'affilid_0' => 'affilid',
+                    'externalid_1' => 'externalid',
+                    'shortname_2' => 'shortname',
+                    'name_3' => 'name',
+                    'country_4' => 'country',
+                    'comments_5' => 'comments',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'a' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'affilid_0' => 'a',
+                    'externalid_1' => 'a',
+                    'shortname_2' => 'a',
+                    'name_3' => 'a',
+                    'country_4' => 'a',
+                    'comments_5' => 'a',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'affilid_0' => 'App\\Entity\\TeamAffiliation',
+                    'externalid_1' => 'App\\Entity\\TeamAffiliation',
+                    'shortname_2' => 'App\\Entity\\TeamAffiliation',
+                    'name_3' => 'App\\Entity\\TeamAffiliation',
+                    'country_4' => 'App\\Entity\\TeamAffiliation',
+                    'comments_5' => 'App\\Entity\\TeamAffiliation',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

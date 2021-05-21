@@ -1,0 +1,56 @@
+<?php //%255B80e28d4b9e69e92e714dd4de97ef9788%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                    'sortorder' => [
+                        1,
+                    ],
+                    'points' => [
+                        2,
+                        3,
+                    ],
+                    'totaltime' => [
+                        4,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT COUNT(t0_.teamid) AS sclr_0 FROM rankcache r1_ INNER JOIN team t0_ ON r1_.teamid = t0_.teamid INNER JOIN team_category t2_ ON t0_.categoryid = t2_.categoryid WHERE r1_.cid = ? AND t2_.sortorder = ? AND t0_.enabled = 1 AND (r1_.points_restricted > ? OR (r1_.points_restricted = ? AND r1_.totaltime_restricted < ?))',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'sclr_0' => 1,
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'sclr_0' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,176 @@
+<?php //%255B1a991bb42bf5d86c2384c8a0e906f3fe%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                    'team' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.clarid AS clarid_0, c0_.externalid AS externalid_1, c0_.cid AS cid_2, c0_.respid AS respid_3, c0_.submittime AS submittime_4, c0_.sender AS sender_5, c0_.recipient AS recipient_6, c0_.jury_member AS jury_member_7, c0_.probid AS probid_8, c0_.category AS category_9, c0_.queue AS queue_10, c0_.body AS body_11, c0_.answered AS answered_12, p1_.probid AS probid_13, p1_.externalid AS externalid_14, p1_.name AS name_15, p1_.timelimit AS timelimit_16, p1_.memlimit AS memlimit_17, p1_.outputlimit AS outputlimit_18, p1_.special_run AS special_run_19, p1_.special_compare AS special_compare_20, p1_.special_compare_args AS special_compare_args_21, p1_.combined_run_compare AS combined_run_compare_22, p1_.problemtext AS problemtext_23, p1_.problemtext_type AS problemtext_type_24, c0_.probid AS probid_25, c0_.cid AS cid_26, c0_.respid AS respid_27, c0_.sender AS sender_28, c0_.recipient AS recipient_29, p1_.special_compare AS special_compare_30, p1_.special_run AS special_run_31 FROM clarification c0_ LEFT JOIN problem p1_ ON c0_.probid = p1_.probid LEFT JOIN team t2_ ON c0_.sender = t2_.teamid LEFT JOIN team t3_ ON c0_.recipient = t3_.teamid WHERE c0_.cid = ? AND c0_.sender IS NULL AND (c0_.recipient = ? OR c0_.recipient IS NULL) ORDER BY c0_.submittime DESC, c0_.clarid DESC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'c' => 'App\\Entity\\Clarification',
+                    'p' => 'App\\Entity\\Problem',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'p' => 'problem',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'p' => 'c',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'clarid_0' => 'clarid',
+                    'externalid_1' => 'externalid',
+                    'cid_2' => 'cid',
+                    'respid_3' => 'respid',
+                    'submittime_4' => 'submittime',
+                    'sender_5' => 'sender_id',
+                    'recipient_6' => 'recipient_id',
+                    'jury_member_7' => 'jury_member',
+                    'probid_8' => 'probid',
+                    'category_9' => 'category',
+                    'queue_10' => 'queue',
+                    'body_11' => 'body',
+                    'answered_12' => 'answered',
+                    'probid_13' => 'probid',
+                    'externalid_14' => 'externalid',
+                    'name_15' => 'name',
+                    'timelimit_16' => 'timelimit',
+                    'memlimit_17' => 'memlimit',
+                    'outputlimit_18' => 'outputlimit',
+                    'special_run_19' => 'special_run',
+                    'special_compare_20' => 'special_compare',
+                    'special_compare_args_21' => 'special_compare_args',
+                    'combined_run_compare_22' => 'combined_run_compare',
+                    'problemtext_23' => 'problemtext',
+                    'problemtext_type_24' => 'problemtext_type',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'probid_25' => 'integer',
+                    'cid_26' => 'integer',
+                    'respid_27' => 'integer',
+                    'sender_28' => 'integer',
+                    'recipient_29' => 'integer',
+                    'special_compare_30' => 'string',
+                    'special_run_31' => 'string',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'c' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'probid_25' => 'probid',
+                    'cid_26' => 'cid',
+                    'respid_27' => 'respid',
+                    'sender_28' => 'sender',
+                    'recipient_29' => 'recipient',
+                    'special_compare_30' => 'special_compare',
+                    'special_run_31' => 'special_run',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'clarid_0' => 'c',
+                    'externalid_1' => 'c',
+                    'cid_2' => 'c',
+                    'respid_3' => 'c',
+                    'submittime_4' => 'c',
+                    'sender_5' => 'c',
+                    'recipient_6' => 'c',
+                    'jury_member_7' => 'c',
+                    'probid_8' => 'c',
+                    'category_9' => 'c',
+                    'queue_10' => 'c',
+                    'body_11' => 'c',
+                    'answered_12' => 'c',
+                    'probid_13' => 'p',
+                    'externalid_14' => 'p',
+                    'name_15' => 'p',
+                    'timelimit_16' => 'p',
+                    'memlimit_17' => 'p',
+                    'outputlimit_18' => 'p',
+                    'special_run_19' => 'p',
+                    'special_compare_20' => 'p',
+                    'special_compare_args_21' => 'p',
+                    'combined_run_compare_22' => 'p',
+                    'problemtext_23' => 'p',
+                    'problemtext_type_24' => 'p',
+                    'probid_25' => 'c',
+                    'cid_26' => 'c',
+                    'respid_27' => 'c',
+                    'sender_28' => 'c',
+                    'recipient_29' => 'c',
+                    'special_compare_30' => 'p',
+                    'special_run_31' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'clarid_0' => 'App\\Entity\\Clarification',
+                    'externalid_1' => 'App\\Entity\\Clarification',
+                    'cid_2' => 'App\\Entity\\Clarification',
+                    'respid_3' => 'App\\Entity\\Clarification',
+                    'submittime_4' => 'App\\Entity\\Clarification',
+                    'sender_5' => 'App\\Entity\\Clarification',
+                    'recipient_6' => 'App\\Entity\\Clarification',
+                    'jury_member_7' => 'App\\Entity\\Clarification',
+                    'probid_8' => 'App\\Entity\\Clarification',
+                    'category_9' => 'App\\Entity\\Clarification',
+                    'queue_10' => 'App\\Entity\\Clarification',
+                    'body_11' => 'App\\Entity\\Clarification',
+                    'answered_12' => 'App\\Entity\\Clarification',
+                    'probid_13' => 'App\\Entity\\Problem',
+                    'externalid_14' => 'App\\Entity\\Problem',
+                    'name_15' => 'App\\Entity\\Problem',
+                    'timelimit_16' => 'App\\Entity\\Problem',
+                    'memlimit_17' => 'App\\Entity\\Problem',
+                    'outputlimit_18' => 'App\\Entity\\Problem',
+                    'special_run_19' => 'App\\Entity\\Problem',
+                    'special_compare_20' => 'App\\Entity\\Problem',
+                    'special_compare_args_21' => 'App\\Entity\\Problem',
+                    'combined_run_compare_22' => 'App\\Entity\\Problem',
+                    'problemtext_23' => 'App\\Entity\\Problem',
+                    'problemtext_type_24' => 'App\\Entity\\Problem',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

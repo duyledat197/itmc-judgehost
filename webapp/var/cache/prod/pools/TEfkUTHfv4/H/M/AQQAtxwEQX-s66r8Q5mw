@@ -1,0 +1,39 @@
+<?php //%255BApp%255CEntity%255CContest%2524activatetimeString%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Exclude'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Exclude')),
+        clone ($p['App\\Validator\\Constraints\\TimeString'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\TimeString')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'activatetime_string',
+            ],
+            'length' => [
+                64,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Authoritative absolute or relative string representation of activatetime',
+                ],
+            ],
+            'relativeIsPositive' => [
+                2 => false,
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

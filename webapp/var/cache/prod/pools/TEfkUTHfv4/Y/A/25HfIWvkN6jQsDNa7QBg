@@ -1,0 +1,146 @@
+<?php //%255BApp%255CController%255CAPI%255CGeneralInfoController%2523getInfoAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone $p['FOS\\RestBundle\\Controller\\Annotations\\Get'],
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone ($p['Swagger\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Property')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Annotations\\Property'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Property'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Property'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/info',
+                '',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+            ],
+            'name' => [
+                1 => 'api_root',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'Information about the API and DOMjudge',
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            '_context' => [
+                2 => $o[13],
+                $o[12],
+                $o[5],
+                6 => $o[7],
+                8 => $o[9],
+                10 => $o[11],
+            ],
+            'properties' => [
+                3 => [
+                    $o[4],
+                    $o[6],
+                    $o[8],
+                    $o[10],
+                ],
+            ],
+            'type' => [
+                3 => 'object',
+                'integer',
+                6 => 'string',
+                8 => 'string',
+                10 => 'string',
+            ],
+            'property' => [
+                4 => 'api_version',
+                6 => 'domjudge_version',
+                8 => 'environment',
+                10 => 'doc_url',
+            ],
+            'filename' => [
+                5 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                5 => 827,
+                7 => 827,
+                9 => 827,
+                11 => 827,
+                827,
+                827,
+            ],
+            'method' => [
+                5 => 'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+                11 => 'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                5 => 'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+                11 => 'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                5 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                5 => [
+                    $o[4],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

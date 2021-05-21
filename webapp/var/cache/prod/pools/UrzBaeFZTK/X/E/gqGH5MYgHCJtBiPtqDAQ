@@ -1,0 +1,321 @@
+<?php //%255BApp%255CEntity%255CExternalRun%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ExternalRun',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ExternalRun',
+            ],
+            'identifier' => [
+                [
+                    'extrunid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'extrunid' => [
+                        'fieldName' => 'extrunid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'External run ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'extrunid',
+                        'id' => true,
+                    ],
+                    'externalid' => [
+                        'fieldName' => 'externalid',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Run ID in external system, should be unique inside a single contest',
+                            'collation' => 'utf8mb4_bin',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'externalid',
+                    ],
+                    'result' => [
+                        'fieldName' => 'result',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Result string as obtained from external system',
+                        ],
+                        'columnName' => 'result',
+                    ],
+                    'endtime' => [
+                        'fieldName' => 'endtime',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time run ended',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'endtime',
+                    ],
+                    'runtime' => [
+                        'fieldName' => 'runtime',
+                        'type' => 'float',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Running time on this testcase',
+                        ],
+                        'columnName' => 'runtime',
+                    ],
+                    'extjudgementid' => [
+                        'fieldName' => 'extjudgementid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Judging ID this run belongs to',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'extjudgementid',
+                    ],
+                    'testcaseid' => [
+                        'fieldName' => 'testcaseid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Testcase ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'testcaseid',
+                    ],
+                    'cid' => [
+                        'fieldName' => 'cid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Contest ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'cid',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'extrunid' => 'extrunid',
+                    'externalid' => 'externalid',
+                    'result' => 'result',
+                    'endtime' => 'endtime',
+                    'runtime' => 'runtime',
+                    'extjudgementid' => 'extjudgementid',
+                    'testcaseid' => 'testcaseid',
+                    'cid' => 'cid',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'extrunid' => 'extrunid',
+                    'externalid' => 'externalid',
+                    'result' => 'result',
+                    'endtime' => 'endtime',
+                    'runtime' => 'runtime',
+                    'extjudgementid' => 'extjudgementid',
+                    'testcaseid' => 'testcaseid',
+                    'cid' => 'cid',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'external_run',
+                    'indexes' => [
+                        'extjudgementid' => [
+                            'columns' => [
+                                'extjudgementid',
+                            ],
+                        ],
+                        'testcaseid' => [
+                            'columns' => [
+                                'testcaseid',
+                            ],
+                        ],
+                    ],
+                    'uniqueConstraints' => [
+                        'externalid' => [
+                            'columns' => [
+                                'cid',
+                                'externalid',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    null,
+                                    '190',
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'comment' => 'Run in external system',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'external_judgement' => [
+                        'fieldName' => 'external_judgement',
+                        'joinColumns' => [
+                            [
+                                'name' => 'extjudgementid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'extjudgementid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'external_runs',
+                        'targetEntity' => 'App\\Entity\\ExternalJudgement',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ExternalRun',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'extjudgementid' => 'extjudgementid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'extjudgementid' => 'extjudgementid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'extjudgementid' => 'extjudgementid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'testcase' => [
+                        'fieldName' => 'testcase',
+                        'joinColumns' => [
+                            [
+                                'name' => 'testcaseid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'testcaseid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'external_runs',
+                        'targetEntity' => 'App\\Entity\\Testcase',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ExternalRun',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'testcaseid' => 'testcaseid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'contest' => [
+                        'fieldName' => 'contest',
+                        'joinColumns' => [
+                            [
+                                'name' => 'cid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'cid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Contest',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ExternalRun',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'cid' => 'cid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'cid' => 'cid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'cid' => 'cid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,164 @@
+<?php //%255Bde22084e5ce4e9558ec81abb4d43dfaf%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'cid' => [
+                        0,
+                    ],
+                    'submitid' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.submitfileid AS submitfileid_0, s0_.submitid AS submitid_1, s0_.filename AS filename_2, s0_.rank AS rank_3, s0_.sourcecode AS sourcecode_4, s1_.submitid AS submitid_5, s1_.externalid AS externalid_6, s1_.origsubmitid AS origsubmitid_7, s1_.cid AS cid_8, s1_.teamid AS teamid_9, s1_.probid AS probid_10, s1_.langid AS langid_11, s1_.submittime AS submittime_12, s1_.valid AS valid_13, s1_.rejudgingid AS rejudgingid_14, s1_.expected_results AS expected_results_15, s1_.entry_point AS entry_point_16, s1_.judgehost AS judgehost_17, s0_.submitid AS submitid_18, s1_.judgehost AS judgehost_19, s1_.cid AS cid_20, s1_.langid AS langid_21, s1_.teamid AS teamid_22, s1_.probid AS probid_23, s1_.cid AS cid_24, s1_.probid AS probid_25, s1_.rejudgingid AS rejudgingid_26, s1_.origsubmitid AS origsubmitid_27 FROM submission_file s0_ INNER JOIN submission s1_ ON s0_.submitid = s1_.submitid WHERE s1_.cid = ? AND s1_.submitid = ? ORDER BY s0_.rank ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'f' => 'App\\Entity\\SubmissionFile',
+                    's' => 'App\\Entity\\Submission',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    's' => 'submission',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    's' => 'f',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'submitfileid_0' => 'submitfileid',
+                    'submitid_1' => 'submitid',
+                    'filename_2' => 'filename',
+                    'rank_3' => 'rank',
+                    'sourcecode_4' => 'sourcecode',
+                    'submitid_5' => 'submitid',
+                    'externalid_6' => 'externalid',
+                    'origsubmitid_7' => 'origsubmitid',
+                    'cid_8' => 'cid',
+                    'teamid_9' => 'teamid',
+                    'probid_10' => 'probid',
+                    'langid_11' => 'langid',
+                    'submittime_12' => 'submittime',
+                    'valid_13' => 'valid',
+                    'rejudgingid_14' => 'rejudgingid',
+                    'expected_results_15' => 'expected_results',
+                    'entry_point_16' => 'entry_point',
+                    'judgehost_17' => 'judgehost_as_string',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'submitid_18' => 'integer',
+                    'judgehost_19' => 'string',
+                    'cid_20' => 'integer',
+                    'langid_21' => 'string',
+                    'teamid_22' => 'integer',
+                    'probid_23' => 'integer',
+                    'cid_24' => 'integer',
+                    'probid_25' => 'integer',
+                    'rejudgingid_26' => 'integer',
+                    'origsubmitid_27' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'f' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'submitid_18' => 'submitid',
+                    'judgehost_19' => 'judgehost',
+                    'cid_20' => 'cid',
+                    'langid_21' => 'langid',
+                    'teamid_22' => 'teamid',
+                    'probid_23' => 'probid',
+                    'cid_24' => 'cid',
+                    'probid_25' => 'probid',
+                    'rejudgingid_26' => 'rejudgingid',
+                    'origsubmitid_27' => 'origsubmitid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'submitfileid_0' => 'f',
+                    'submitid_1' => 'f',
+                    'filename_2' => 'f',
+                    'rank_3' => 'f',
+                    'sourcecode_4' => 'f',
+                    'submitid_5' => 's',
+                    'externalid_6' => 's',
+                    'origsubmitid_7' => 's',
+                    'cid_8' => 's',
+                    'teamid_9' => 's',
+                    'probid_10' => 's',
+                    'langid_11' => 's',
+                    'submittime_12' => 's',
+                    'valid_13' => 's',
+                    'rejudgingid_14' => 's',
+                    'expected_results_15' => 's',
+                    'entry_point_16' => 's',
+                    'judgehost_17' => 's',
+                    'submitid_18' => 'f',
+                    'judgehost_19' => 's',
+                    'cid_20' => 's',
+                    'langid_21' => 's',
+                    'teamid_22' => 's',
+                    'probid_23' => 's',
+                    'cid_24' => 's',
+                    'probid_25' => 's',
+                    'rejudgingid_26' => 's',
+                    'origsubmitid_27' => 's',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'submitfileid_0' => 'App\\Entity\\SubmissionFile',
+                    'submitid_1' => 'App\\Entity\\SubmissionFile',
+                    'filename_2' => 'App\\Entity\\SubmissionFile',
+                    'rank_3' => 'App\\Entity\\SubmissionFile',
+                    'sourcecode_4' => 'App\\Entity\\SubmissionFile',
+                    'submitid_5' => 'App\\Entity\\Submission',
+                    'externalid_6' => 'App\\Entity\\Submission',
+                    'origsubmitid_7' => 'App\\Entity\\Submission',
+                    'cid_8' => 'App\\Entity\\Submission',
+                    'teamid_9' => 'App\\Entity\\Submission',
+                    'probid_10' => 'App\\Entity\\Submission',
+                    'langid_11' => 'App\\Entity\\Submission',
+                    'submittime_12' => 'App\\Entity\\Submission',
+                    'valid_13' => 'App\\Entity\\Submission',
+                    'rejudgingid_14' => 'App\\Entity\\Submission',
+                    'expected_results_15' => 'App\\Entity\\Submission',
+                    'entry_point_16' => 'App\\Entity\\Submission',
+                    'judgehost_17' => 'App\\Entity\\Submission',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

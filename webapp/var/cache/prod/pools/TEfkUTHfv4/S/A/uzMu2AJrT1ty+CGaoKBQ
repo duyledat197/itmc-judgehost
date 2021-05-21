@@ -1,0 +1,28 @@
+<?php //%255BApp%255CEntity%255CScoreCache%2524is_correct_restricted%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'is_correct_restricted',
+            ],
+            'type' => [
+                'boolean',
+            ],
+            'options' => [
+                [
+                    'comment' => 'Has there been a correct submission? (restricted audience)',
+                    'default' => '0',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

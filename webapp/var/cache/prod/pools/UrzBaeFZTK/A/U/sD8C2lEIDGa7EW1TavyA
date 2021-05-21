@@ -1,0 +1,140 @@
+<?php //%255B326317bc93a448ec67ca9b2f035bb5fe%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'teamid' => [
+                        0,
+                        1,
+                    ],
+                    'now' => [
+                        2,
+                        3,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.cid AS cid_0, c0_.externalid AS externalid_1, c0_.name AS name_2, c0_.shortname AS shortname_3, c0_.activatetime AS activatetime_4, c0_.starttime AS starttime_5, c0_.starttime_enabled AS starttime_enabled_6, c0_.freezetime AS freezetime_7, c0_.endtime AS endtime_8, c0_.unfreezetime AS unfreezetime_9, c0_.finalizetime AS finalizetime_10, c0_.finalizecomment AS finalizecomment_11, c0_.b AS b_12, c0_.deactivatetime AS deactivatetime_13, c0_.activatetime_string AS activatetime_string_14, c0_.starttime_string AS starttime_string_15, c0_.freezetime_string AS freezetime_string_16, c0_.endtime_string AS endtime_string_17, c0_.unfreezetime_string AS unfreezetime_string_18, c0_.deactivatetime_string AS deactivatetime_string_19, c0_.enabled AS enabled_20, c0_.process_balloons AS process_balloons_21, c0_.public AS public_22, c0_.open_to_all_teams AS open_to_all_teams_23 FROM contest c0_ LEFT JOIN contestteam c2_ ON c0_.cid = c2_.cid LEFT JOIN team t1_ ON t1_.teamid = c2_.teamid LEFT JOIN contestteamcategory c4_ ON c0_.cid = c4_.cid LEFT JOIN team_category t3_ ON t3_.categoryid = c4_.categoryid LEFT JOIN team t5_ ON t3_.categoryid = t5_.categoryid WHERE (t1_.teamid = ? OR t5_.teamid = ? OR c0_.open_to_all_teams = 1) AND c0_.enabled = 1 AND (c0_.deactivatetime IS NULL OR c0_.deactivatetime > ?) AND c0_.activatetime <= ? ORDER BY c0_.activatetime ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'c' => 'App\\Entity\\Contest',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'cid_0' => 'cid',
+                    'externalid_1' => 'externalid',
+                    'name_2' => 'name',
+                    'shortname_3' => 'shortname',
+                    'activatetime_4' => 'activatetime',
+                    'starttime_5' => 'starttime',
+                    'starttime_enabled_6' => 'starttimeEnabled',
+                    'freezetime_7' => 'freezetime',
+                    'endtime_8' => 'endtime',
+                    'unfreezetime_9' => 'unfreezetime',
+                    'finalizetime_10' => 'finalizetime',
+                    'finalizecomment_11' => 'finalizecomment',
+                    'b_12' => 'b',
+                    'deactivatetime_13' => 'deactivatetime',
+                    'activatetime_string_14' => 'activatetimeString',
+                    'starttime_string_15' => 'starttimeString',
+                    'freezetime_string_16' => 'freezetimeString',
+                    'endtime_string_17' => 'endtimeString',
+                    'unfreezetime_string_18' => 'unfreezetimeString',
+                    'deactivatetime_string_19' => 'deactivatetimeString',
+                    'enabled_20' => 'enabled',
+                    'process_balloons_21' => 'processBalloons',
+                    'public_22' => 'public',
+                    'open_to_all_teams_23' => 'openToAllTeams',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'c' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'cid_0' => 'c',
+                    'externalid_1' => 'c',
+                    'name_2' => 'c',
+                    'shortname_3' => 'c',
+                    'activatetime_4' => 'c',
+                    'starttime_5' => 'c',
+                    'starttime_enabled_6' => 'c',
+                    'freezetime_7' => 'c',
+                    'endtime_8' => 'c',
+                    'unfreezetime_9' => 'c',
+                    'finalizetime_10' => 'c',
+                    'finalizecomment_11' => 'c',
+                    'b_12' => 'c',
+                    'deactivatetime_13' => 'c',
+                    'activatetime_string_14' => 'c',
+                    'starttime_string_15' => 'c',
+                    'freezetime_string_16' => 'c',
+                    'endtime_string_17' => 'c',
+                    'unfreezetime_string_18' => 'c',
+                    'deactivatetime_string_19' => 'c',
+                    'enabled_20' => 'c',
+                    'process_balloons_21' => 'c',
+                    'public_22' => 'c',
+                    'open_to_all_teams_23' => 'c',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'c' => 'cid_0',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'cid_0' => 'App\\Entity\\Contest',
+                    'externalid_1' => 'App\\Entity\\Contest',
+                    'name_2' => 'App\\Entity\\Contest',
+                    'shortname_3' => 'App\\Entity\\Contest',
+                    'activatetime_4' => 'App\\Entity\\Contest',
+                    'starttime_5' => 'App\\Entity\\Contest',
+                    'starttime_enabled_6' => 'App\\Entity\\Contest',
+                    'freezetime_7' => 'App\\Entity\\Contest',
+                    'endtime_8' => 'App\\Entity\\Contest',
+                    'unfreezetime_9' => 'App\\Entity\\Contest',
+                    'finalizetime_10' => 'App\\Entity\\Contest',
+                    'finalizecomment_11' => 'App\\Entity\\Contest',
+                    'b_12' => 'App\\Entity\\Contest',
+                    'deactivatetime_13' => 'App\\Entity\\Contest',
+                    'activatetime_string_14' => 'App\\Entity\\Contest',
+                    'starttime_string_15' => 'App\\Entity\\Contest',
+                    'freezetime_string_16' => 'App\\Entity\\Contest',
+                    'endtime_string_17' => 'App\\Entity\\Contest',
+                    'unfreezetime_string_18' => 'App\\Entity\\Contest',
+                    'deactivatetime_string_19' => 'App\\Entity\\Contest',
+                    'enabled_20' => 'App\\Entity\\Contest',
+                    'process_balloons_21' => 'App\\Entity\\Contest',
+                    'public_22' => 'App\\Entity\\Contest',
+                    'open_to_all_teams_23' => 'App\\Entity\\Contest',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

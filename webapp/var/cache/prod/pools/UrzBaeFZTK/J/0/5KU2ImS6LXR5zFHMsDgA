@@ -1,0 +1,142 @@
+<?php //%255Be0cec12b403e9272b045d580f23777c0%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT SUM(t0_.sample) AS sclr_0, c1_.shortname AS shortname_1, c1_.points AS points_2, c1_.allow_submit AS allow_submit_3, c1_.allow_judge AS allow_judge_4, c1_.color AS color_5, c1_.lazy_eval_results AS lazy_eval_results_6, p2_.probid AS probid_7, p2_.externalid AS externalid_8, p2_.name AS name_9, p2_.timelimit AS timelimit_10, p2_.memlimit AS memlimit_11, p2_.problemtext_type AS problemtext_type_12, c1_.cid AS cid_13, c1_.probid AS probid_14, p2_.special_compare AS special_compare_15, p2_.special_run AS special_run_16 FROM contestproblem c1_ INNER JOIN problem p2_ ON c1_.probid = p2_.probid LEFT JOIN testcase t0_ ON p2_.probid = t0_.probid WHERE c1_.cid = ? AND c1_.allow_submit = 1 GROUP BY c1_.probid ORDER BY c1_.shortname ASC',
+            ],
+        ],
+        'stdClass' => [
+            'isMixed' => [
+                2 => true,
+            ],
+            'aliasMap' => [
+                2 => [
+                    'cp' => 'App\\Entity\\ContestProblem',
+                    'p' => 'App\\Entity\\Problem',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'p' => 'problem',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'p' => 'cp',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'shortname_1' => 'shortname',
+                    'points_2' => 'points',
+                    'allow_submit_3' => 'allowSubmit',
+                    'allow_judge_4' => 'allowJudge',
+                    'color_5' => 'color',
+                    'lazy_eval_results_6' => 'lazyEvalResults',
+                    'probid_7' => 'probid',
+                    'externalid_8' => 'externalid',
+                    'name_9' => 'name',
+                    'timelimit_10' => 'timelimit',
+                    'memlimit_11' => 'memlimit',
+                    'problemtext_type_12' => 'problemtext_type',
+                ],
+            ],
+            'scalarMappings' => [
+                2 => [
+                    'sclr_0' => 'numsamples',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'sclr_0' => 'string',
+                    'cid_13' => 'integer',
+                    'probid_14' => 'integer',
+                    'special_compare_15' => 'string',
+                    'special_run_16' => 'string',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'cp' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_13' => 'cid',
+                    'probid_14' => 'probid',
+                    'special_compare_15' => 'special_compare',
+                    'special_run_16' => 'special_run',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'shortname_1' => 'cp',
+                    'points_2' => 'cp',
+                    'allow_submit_3' => 'cp',
+                    'allow_judge_4' => 'cp',
+                    'color_5' => 'cp',
+                    'lazy_eval_results_6' => 'cp',
+                    'probid_7' => 'p',
+                    'externalid_8' => 'p',
+                    'name_9' => 'p',
+                    'timelimit_10' => 'p',
+                    'memlimit_11' => 'p',
+                    'problemtext_type_12' => 'p',
+                    'cid_13' => 'cp',
+                    'probid_14' => 'cp',
+                    'special_compare_15' => 'p',
+                    'special_run_16' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'shortname_1' => 'App\\Entity\\ContestProblem',
+                    'points_2' => 'App\\Entity\\ContestProblem',
+                    'allow_submit_3' => 'App\\Entity\\ContestProblem',
+                    'allow_judge_4' => 'App\\Entity\\ContestProblem',
+                    'color_5' => 'App\\Entity\\ContestProblem',
+                    'lazy_eval_results_6' => 'App\\Entity\\ContestProblem',
+                    'probid_7' => 'App\\Entity\\Problem',
+                    'externalid_8' => 'App\\Entity\\Problem',
+                    'name_9' => 'App\\Entity\\Problem',
+                    'timelimit_10' => 'App\\Entity\\Problem',
+                    'memlimit_11' => 'App\\Entity\\Problem',
+                    'problemtext_type_12' => 'App\\Entity\\Problem',
+                ],
+            ],
+            'isIdentifierColumn' => [
+                2 => [
+                    'cp' => [
+                        'cid_13' => true,
+                        'probid_14' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,82 @@
+<?php //App.Entity.Team
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Callback'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Callback')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Team',
+                'users',
+            ],
+            'defaultGroup' => [
+                'Team',
+            ],
+            'members' => [
+                [
+                    'users' => [
+                        $o[1],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'users' => $o[1],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[2],
+                    $o[3],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[2],
+                        $o[3],
+                    ],
+                    'Team' => [
+                        $o[2],
+                        $o[3],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Team',
+            ],
+            'property' => [
+                1 => 'users',
+            ],
+            'cascadingStrategy' => [
+                1 => 2,
+            ],
+            'traversalStrategy' => [
+                1 => 1,
+            ],
+            'fields' => [
+                2 => 'icpcid',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Team',
+                ],
+                [
+                    'Default',
+                    'Team',
+                ],
+            ],
+            'callback' => [
+                3 => 'validate',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

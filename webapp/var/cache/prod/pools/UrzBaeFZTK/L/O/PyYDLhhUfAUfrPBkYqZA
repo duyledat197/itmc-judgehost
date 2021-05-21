@@ -1,0 +1,74 @@
+<?php //%255B6f94618697ab3076e59321b21bf5f981%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.categoryid AS categoryid_0, t0_.name AS name_1, t0_.sortorder AS sortorder_2, t0_.color AS color_3, t0_.visible AS visible_4, t0_.allow_self_registration AS allow_self_registration_5 FROM team_category t0_ ORDER BY t0_.sortorder ASC, t0_.name ASC, t0_.categoryid ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'cat' => 'App\\Entity\\TeamCategory',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'categoryid_0' => 'categoryid',
+                    'name_1' => 'name',
+                    'sortorder_2' => 'sortorder',
+                    'color_3' => 'color',
+                    'visible_4' => 'visible',
+                    'allow_self_registration_5' => 'allow_self_registration',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'cat' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'categoryid_0' => 'cat',
+                    'name_1' => 'cat',
+                    'sortorder_2' => 'cat',
+                    'color_3' => 'cat',
+                    'visible_4' => 'cat',
+                    'allow_self_registration_5' => 'cat',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'cat' => 'categoryid_0',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'categoryid_0' => 'App\\Entity\\TeamCategory',
+                    'name_1' => 'App\\Entity\\TeamCategory',
+                    'sortorder_2' => 'App\\Entity\\TeamCategory',
+                    'color_3' => 'App\\Entity\\TeamCategory',
+                    'visible_4' => 'App\\Entity\\TeamCategory',
+                    'allow_self_registration_5' => 'App\\Entity\\TeamCategory',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

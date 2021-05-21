@@ -1,0 +1,132 @@
+<?php //%255Bafe52bb97c9c0f29bea99857484ef33c%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contestIds' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.submitid AS submitid_0, s0_.externalid AS externalid_1, s0_.origsubmitid AS origsubmitid_2, s0_.cid AS cid_3, s0_.teamid AS teamid_4, s0_.probid AS probid_5, s0_.langid AS langid_6, s0_.submittime AS submittime_7, s0_.valid AS valid_8, s0_.rejudgingid AS rejudgingid_9, s0_.expected_results AS expected_results_10, s0_.entry_point AS entry_point_11, s0_.judgehost AS judgehost_12, s0_.judgehost AS judgehost_13, s0_.cid AS cid_14, s0_.langid AS langid_15, s0_.teamid AS teamid_16, s0_.probid AS probid_17, s0_.cid AS cid_18, s0_.probid AS probid_19, s0_.rejudgingid AS rejudgingid_20, s0_.origsubmitid AS origsubmitid_21 FROM submission s0_ INNER JOIN team t1_ ON s0_.teamid = t1_.teamid INNER JOIN language l2_ ON s0_.langid = l2_.langid INNER JOIN contestproblem c3_ ON s0_.cid = c3_.cid AND s0_.probid = c3_.probid WHERE s0_.judgehost IS NULL AND s0_.cid IN (?) AND l2_.allow_judge = 1 AND c3_.allow_judge = 1 AND s0_.valid = 1 ORDER BY t1_.judging_last_started ASC, s0_.submittime ASC, s0_.submitid ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    's' => 'App\\Entity\\Submission',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'submitid_0' => 'submitid',
+                    'externalid_1' => 'externalid',
+                    'origsubmitid_2' => 'origsubmitid',
+                    'cid_3' => 'cid',
+                    'teamid_4' => 'teamid',
+                    'probid_5' => 'probid',
+                    'langid_6' => 'langid',
+                    'submittime_7' => 'submittime',
+                    'valid_8' => 'valid',
+                    'rejudgingid_9' => 'rejudgingid',
+                    'expected_results_10' => 'expected_results',
+                    'entry_point_11' => 'entry_point',
+                    'judgehost_12' => 'judgehost_as_string',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'judgehost_13' => 'string',
+                    'cid_14' => 'integer',
+                    'langid_15' => 'string',
+                    'teamid_16' => 'integer',
+                    'probid_17' => 'integer',
+                    'cid_18' => 'integer',
+                    'probid_19' => 'integer',
+                    'rejudgingid_20' => 'integer',
+                    'origsubmitid_21' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    's' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'judgehost_13' => 'judgehost',
+                    'cid_14' => 'cid',
+                    'langid_15' => 'langid',
+                    'teamid_16' => 'teamid',
+                    'probid_17' => 'probid',
+                    'cid_18' => 'cid',
+                    'probid_19' => 'probid',
+                    'rejudgingid_20' => 'rejudgingid',
+                    'origsubmitid_21' => 'origsubmitid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'submitid_0' => 's',
+                    'externalid_1' => 's',
+                    'origsubmitid_2' => 's',
+                    'cid_3' => 's',
+                    'teamid_4' => 's',
+                    'probid_5' => 's',
+                    'langid_6' => 's',
+                    'submittime_7' => 's',
+                    'valid_8' => 's',
+                    'rejudgingid_9' => 's',
+                    'expected_results_10' => 's',
+                    'entry_point_11' => 's',
+                    'judgehost_12' => 's',
+                    'judgehost_13' => 's',
+                    'cid_14' => 's',
+                    'langid_15' => 's',
+                    'teamid_16' => 's',
+                    'probid_17' => 's',
+                    'cid_18' => 's',
+                    'probid_19' => 's',
+                    'rejudgingid_20' => 's',
+                    'origsubmitid_21' => 's',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'submitid_0' => 'App\\Entity\\Submission',
+                    'externalid_1' => 'App\\Entity\\Submission',
+                    'origsubmitid_2' => 'App\\Entity\\Submission',
+                    'cid_3' => 'App\\Entity\\Submission',
+                    'teamid_4' => 'App\\Entity\\Submission',
+                    'probid_5' => 'App\\Entity\\Submission',
+                    'langid_6' => 'App\\Entity\\Submission',
+                    'submittime_7' => 'App\\Entity\\Submission',
+                    'valid_8' => 'App\\Entity\\Submission',
+                    'rejudgingid_9' => 'App\\Entity\\Submission',
+                    'expected_results_10' => 'App\\Entity\\Submission',
+                    'entry_point_11' => 'App\\Entity\\Submission',
+                    'judgehost_12' => 'App\\Entity\\Submission',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

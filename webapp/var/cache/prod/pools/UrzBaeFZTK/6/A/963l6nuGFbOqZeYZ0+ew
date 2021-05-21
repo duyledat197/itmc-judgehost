@@ -1,0 +1,187 @@
+<?php //%255BApp%255CEntity%255CTeamAffiliation%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\TeamAffiliation',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\TeamAffiliation',
+            ],
+            'identifier' => [
+                [
+                    'affilid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'affilid' => [
+                        'fieldName' => 'affilid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Team affiliation ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'affilid',
+                        'id' => true,
+                    ],
+                    'externalid' => [
+                        'fieldName' => 'externalid',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Team affiliation ID in an external system',
+                            'collation' => 'utf8mb4_bin',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'externalid',
+                    ],
+                    'shortname' => [
+                        'fieldName' => 'shortname',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Short descriptive name',
+                        ],
+                        'columnName' => 'shortname',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Descriptive name',
+                        ],
+                        'columnName' => 'name',
+                    ],
+                    'country' => [
+                        'fieldName' => 'country',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 3,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'ISO 3166-1 alpha-3 country code',
+                            'default' => 'NULL',
+                            'fixed' => true,
+                        ],
+                        'columnName' => 'country',
+                    ],
+                    'comments' => [
+                        'fieldName' => 'comments',
+                        'type' => 'text',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Comments',
+                            'default' => 'NULL',
+                        ],
+                        'columnName' => 'comments',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'affilid' => 'affilid',
+                    'externalid' => 'externalid',
+                    'shortname' => 'shortname',
+                    'name' => 'name',
+                    'country' => 'country',
+                    'comments' => 'comments',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'affilid' => 'affilid',
+                    'externalid' => 'externalid',
+                    'shortname' => 'shortname',
+                    'name' => 'name',
+                    'country' => 'country',
+                    'comments' => 'comments',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'team_affiliation',
+                    'uniqueConstraints' => [
+                        'externalid' => [
+                            'columns' => [
+                                'externalid',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    '190',
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Affilitations for teams (e.g.: university, company)',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'teams' => [
+                        'fieldName' => 'teams',
+                        'mappedBy' => 'affiliation',
+                        'targetEntity' => 'App\\Entity\\Team',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\TeamAffiliation',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

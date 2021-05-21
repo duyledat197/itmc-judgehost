@@ -1,0 +1,50 @@
+<?php //%255B2980820d5b0378646ea8c42c81208370%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'probid' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT t0_.testcaseid AS testcaseid_0, t0_.rank AS rank_1, LENGTH(t1_.output) AS sclr_2 FROM testcase t0_ INNER JOIN testcase_content t1_ ON t0_.testcaseid = t1_.testcaseid WHERE t0_.probid = ?',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'testcaseid_0' => 'testcaseid',
+                    'rank_1' => 'rank',
+                    'sclr_2' => 'output_size',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'testcaseid_0' => 'integer',
+                    'rank_1' => 'integer',
+                    'sclr_2' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

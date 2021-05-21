@@ -1,0 +1,111 @@
+<?php //%255BApp%255CEntity%255CConfiguration%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Configuration',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Configuration',
+            ],
+            'identifier' => [
+                [
+                    'configid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'configid' => [
+                        'fieldName' => 'configid',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Configuration ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'configid',
+                        'id' => true,
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Name of the configuration variable',
+                        ],
+                        'columnName' => 'name',
+                    ],
+                    'value' => [
+                        'fieldName' => 'value',
+                        'type' => 'json',
+                        'scale' => 0,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'comment' => 'Content of the configuration variable (JSON encoded)',
+                        ],
+                        'columnName' => 'value',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'configid' => 'configid',
+                    'name' => 'name',
+                    'value' => 'value',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'configid' => 'configid',
+                    'name' => 'name',
+                    'value' => 'value',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'configuration',
+                    'uniqueConstraints' => [
+                        'name' => [
+                            'columns' => [
+                                'name',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Global configuration variables',
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

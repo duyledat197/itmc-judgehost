@@ -1,0 +1,150 @@
+<?php //%255BApp%255CController%255CAPI%255COrganizationController%2523listAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone ($p['Swagger\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Items')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                1 => '200',
+            ],
+            'description' => [
+                1 => 'Returns all the organizations for this contest',
+                13 => 'Only show organizations for the given country',
+            ],
+            'schema' => [
+                1 => $o[2],
+            ],
+            '_context' => [
+                1 => $o[8],
+                $o[7],
+                $o[6],
+                $o[5],
+                9 => $o[10],
+                11 => $o[12],
+                13 => $o[14],
+            ],
+            'type' => [
+                2 => 'array',
+                4 => 'App\\Entity\\TeamAffiliation',
+                13 => 'string',
+            ],
+            'items' => [
+                2 => $o[3],
+            ],
+            'ref' => [
+                3 => $o[4],
+                9 => '#/parameters/idlist',
+                11 => '#/parameters/strict',
+            ],
+            'filename' => [
+                5 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                5 => 827,
+                827,
+                827,
+                827,
+                10 => 827,
+                12 => 827,
+                14 => 827,
+            ],
+            'method' => [
+                5 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+            ],
+            'class' => [
+                5 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+            ],
+            'namespace' => [
+                5 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                5 => [
+                    $o[4],
+                ],
+                [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                [
+                    $o[1],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[13],
+                ],
+            ],
+            'name' => [
+                13 => 'country',
+            ],
+            'in' => [
+                13 => 'query',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[9],
+        $o[11],
+        $o[13],
+    ],
+    []
+); }];

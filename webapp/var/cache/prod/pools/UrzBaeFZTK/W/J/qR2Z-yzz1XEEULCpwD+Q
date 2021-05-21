@@ -1,0 +1,55 @@
+<?php //%255Bbfb93f6ecf5b1849dfaf211c70b21b13%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'rejudging' => [
+                        0,
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.submitid AS submitid_0, s0_.cid AS cid_1, s0_.teamid AS teamid_2, s0_.probid AS probid_3, j1_.judgingid AS judgingid_4 FROM submission s0_ LEFT JOIN judging j1_ ON s0_.submitid = j1_.submitid AND (j1_.rejudgingid = ?) WHERE s0_.rejudgingid = ?',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'submitid_0' => 'submitid',
+                    'cid_1' => 'cid',
+                    'teamid_2' => 'teamid',
+                    'probid_3' => 'probid',
+                    'judgingid_4' => 'judgingid',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'submitid_0' => 'integer',
+                    'cid_1' => 'integer',
+                    'teamid_2' => 'integer',
+                    'probid_3' => 'integer',
+                    'judgingid_4' => 'integer',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

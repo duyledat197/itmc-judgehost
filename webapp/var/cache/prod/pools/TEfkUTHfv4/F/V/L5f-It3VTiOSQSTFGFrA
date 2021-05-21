@@ -1,0 +1,34 @@
+<?php //%255BApp%255CEntity%255CExternalRun%2524endtime%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'endtime',
+            ],
+            'type' => [
+                'decimal',
+            ],
+            'precision' => [
+                32,
+            ],
+            'scale' => [
+                9,
+            ],
+            'options' => [
+                [
+                    'comment' => 'Time run ended',
+                    'unsigned' => true,
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

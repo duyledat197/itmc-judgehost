@@ -1,0 +1,98 @@
+<?php //%255B44f3b9a2253ae7007a05c24c4ed3f714%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT r0_.rejudgingid AS rejudgingid_0, r0_.userid_start AS userid_start_1, r0_.userid_finish AS userid_finish_2, r0_.starttime AS starttime_3, r0_.endtime AS endtime_4, r0_.reason AS reason_5, r0_.valid AS valid_6, r0_.auto_apply AS auto_apply_7, r0_.`repeat` AS repeat_8, r0_.repeat_rejudgingid AS repeat_rejudgingid_9, r0_.userid_start AS userid_start_10, r0_.userid_finish AS userid_finish_11, r0_.repeat_rejudgingid AS repeat_rejudgingid_12 FROM rejudging r0_ LEFT JOIN user u1_ ON r0_.userid_start = u1_.userid LEFT JOIN user u2_ ON r0_.userid_finish = u2_.userid ORDER BY r0_.rejudgingid DESC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'r' => 'App\\Entity\\Rejudging',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'rejudgingid_0' => 'rejudgingid',
+                    'userid_start_1' => 'userid_start',
+                    'userid_finish_2' => 'userid_finish',
+                    'starttime_3' => 'starttime',
+                    'endtime_4' => 'endtime',
+                    'reason_5' => 'reason',
+                    'valid_6' => 'valid',
+                    'auto_apply_7' => 'autoApply',
+                    'repeat_8' => 'repeat',
+                    'repeat_rejudgingid_9' => 'repeat_rejudgingid',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'userid_start_10' => 'integer',
+                    'userid_finish_11' => 'integer',
+                    'repeat_rejudgingid_12' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'r' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'userid_start_10' => 'userid_start',
+                    'userid_finish_11' => 'userid_finish',
+                    'repeat_rejudgingid_12' => 'repeat_rejudgingid',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'rejudgingid_0' => 'r',
+                    'userid_start_1' => 'r',
+                    'userid_finish_2' => 'r',
+                    'starttime_3' => 'r',
+                    'endtime_4' => 'r',
+                    'reason_5' => 'r',
+                    'valid_6' => 'r',
+                    'auto_apply_7' => 'r',
+                    'repeat_8' => 'r',
+                    'repeat_rejudgingid_9' => 'r',
+                    'userid_start_10' => 'r',
+                    'userid_finish_11' => 'r',
+                    'repeat_rejudgingid_12' => 'r',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'rejudgingid_0' => 'App\\Entity\\Rejudging',
+                    'userid_start_1' => 'App\\Entity\\Rejudging',
+                    'userid_finish_2' => 'App\\Entity\\Rejudging',
+                    'starttime_3' => 'App\\Entity\\Rejudging',
+                    'endtime_4' => 'App\\Entity\\Rejudging',
+                    'reason_5' => 'App\\Entity\\Rejudging',
+                    'valid_6' => 'App\\Entity\\Rejudging',
+                    'auto_apply_7' => 'App\\Entity\\Rejudging',
+                    'repeat_8' => 'App\\Entity\\Rejudging',
+                    'repeat_rejudgingid_9' => 'App\\Entity\\Rejudging',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

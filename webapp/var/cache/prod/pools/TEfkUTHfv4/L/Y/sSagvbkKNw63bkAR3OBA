@@ -1,0 +1,173 @@
+<?php //%255BApp%255CController%255CAPI%255CSubmissionController%2523addSubmissionAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['Swagger\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Post')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'consumes' => [
+                1 => [
+                    'multipart/form-data',
+                ],
+            ],
+            '_context' => [
+                1 => $o[2],
+                4 => $o[5],
+                6 => $o[7],
+                8 => $o[9],
+                10 => $o[11],
+                12 => $o[15],
+                $o[14],
+            ],
+            'filename' => [
+                2 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                2 => 827,
+                5 => 827,
+                7 => 827,
+                9 => 827,
+                11 => 827,
+                14 => 827,
+                827,
+            ],
+            'method' => [
+                2 => 'Annotation',
+                5 => 'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+                11 => 'Annotation',
+                14 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                2 => 'DocParser',
+                5 => 'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+                11 => 'DocParser',
+                14 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                2 => 'Doctrine\\Common\\Annotations',
+                5 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                2 => [
+                    $o[1],
+                ],
+                5 => [
+                    $o[4],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                14 => [
+                    $o[13],
+                ],
+                [
+                    $o[12],
+                ],
+            ],
+            'name' => [
+                4 => 'problem',
+                6 => 'language',
+                8 => 'code[]',
+                10 => 'entry_point',
+            ],
+            'in' => [
+                4 => 'formData',
+                6 => 'formData',
+                8 => 'formData',
+                10 => 'formData',
+            ],
+            'description' => [
+                4 => 'The problem to submit a solution for',
+                6 => 'The language to submit a solution in',
+                8 => 'The file to submit',
+                10 => 'The entry point for the submission. Required for languages requiring an entry point',
+                12 => 'When submitting was successful',
+                'The ID of the submitted solution',
+            ],
+            'required' => [
+                4 => true,
+                6 => true,
+                8 => true,
+            ],
+            'type' => [
+                4 => 'string',
+                6 => 'string',
+                8 => 'file',
+                10 => 'string',
+                13 => 'integer',
+            ],
+            'response' => [
+                12 => '200',
+            ],
+            'schema' => [
+                12 => $o[13],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                3 => 'ROLE_TEAM',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[3],
+        $o[4],
+        $o[6],
+        $o[8],
+        $o[10],
+        $o[12],
+    ],
+    []
+); }];

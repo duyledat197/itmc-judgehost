@@ -1,0 +1,127 @@
+<?php //%255B83a0f8072ce92bc0c02d8ad4353052fb%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contest' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.shortname AS shortname_0, c0_.points AS points_1, c0_.allow_submit AS allow_submit_2, c0_.allow_judge AS allow_judge_3, c0_.color AS color_4, c0_.lazy_eval_results AS lazy_eval_results_5, p1_.probid AS probid_6, p1_.externalid AS externalid_7, p1_.name AS name_8, p1_.problemtext_type AS problemtext_type_9, c0_.cid AS cid_10, c0_.probid AS probid_11, p1_.special_compare AS special_compare_12, p1_.special_run AS special_run_13 FROM contestproblem c0_ INNER JOIN problem p1_ ON c0_.probid = p1_.probid WHERE c0_.allow_submit = 1 AND c0_.cid = ? ORDER BY c0_.shortname ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'cp' => 'App\\Entity\\ContestProblem',
+                    'p' => 'App\\Entity\\Problem',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'p' => 'problem',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'p' => 'cp',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'shortname_0' => 'shortname',
+                    'points_1' => 'points',
+                    'allow_submit_2' => 'allowSubmit',
+                    'allow_judge_3' => 'allowJudge',
+                    'color_4' => 'color',
+                    'lazy_eval_results_5' => 'lazyEvalResults',
+                    'probid_6' => 'probid',
+                    'externalid_7' => 'externalid',
+                    'name_8' => 'name',
+                    'problemtext_type_9' => 'problemtext_type',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'cid_10' => 'integer',
+                    'probid_11' => 'integer',
+                    'special_compare_12' => 'string',
+                    'special_run_13' => 'string',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'cp' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'cid_10' => 'cid',
+                    'probid_11' => 'probid',
+                    'special_compare_12' => 'special_compare',
+                    'special_run_13' => 'special_run',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'shortname_0' => 'cp',
+                    'points_1' => 'cp',
+                    'allow_submit_2' => 'cp',
+                    'allow_judge_3' => 'cp',
+                    'color_4' => 'cp',
+                    'lazy_eval_results_5' => 'cp',
+                    'probid_6' => 'p',
+                    'externalid_7' => 'p',
+                    'name_8' => 'p',
+                    'problemtext_type_9' => 'p',
+                    'cid_10' => 'cp',
+                    'probid_11' => 'cp',
+                    'special_compare_12' => 'p',
+                    'special_run_13' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'shortname_0' => 'App\\Entity\\ContestProblem',
+                    'points_1' => 'App\\Entity\\ContestProblem',
+                    'allow_submit_2' => 'App\\Entity\\ContestProblem',
+                    'allow_judge_3' => 'App\\Entity\\ContestProblem',
+                    'color_4' => 'App\\Entity\\ContestProblem',
+                    'lazy_eval_results_5' => 'App\\Entity\\ContestProblem',
+                    'probid_6' => 'App\\Entity\\Problem',
+                    'externalid_7' => 'App\\Entity\\Problem',
+                    'name_8' => 'App\\Entity\\Problem',
+                    'problemtext_type_9' => 'App\\Entity\\Problem',
+                ],
+            ],
+            'isIdentifierColumn' => [
+                2 => [
+                    'cp' => [
+                        'cid_10' => true,
+                        'probid_11' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

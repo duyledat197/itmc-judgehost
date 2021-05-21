@@ -1,0 +1,202 @@
+<?php //%255BApp%255CController%255CAPI%255CProblemController%2523addProblemAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['Swagger\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Post')),
+        clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+        clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Parameter'],
+        clone $p['Swagger\\Context'],
+        clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+        clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+        clone ($p['Swagger\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Property')),
+        clone ($p['Swagger\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Items')),
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Annotations\\Property'],
+        clone $p['Swagger\\Annotations\\Items'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+        clone $p['Swagger\\Context'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_ADMIN',
+            ],
+        ],
+        'stdClass' => [
+            'consumes' => [
+                2 => [
+                    'multipart/form-data',
+                ],
+            ],
+            '_context' => [
+                2 => $o[3],
+                4 => $o[5],
+                6 => $o[7],
+                8 => $o[19],
+                $o[18],
+                $o[13],
+                $o[12],
+                14 => $o[17],
+                $o[16],
+            ],
+            'filename' => [
+                3 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                16 => '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/home/tncnhan/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 827,
+                5 => 827,
+                7 => 827,
+                12 => 827,
+                827,
+                16 => 827,
+                827,
+                827,
+                827,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                5 => 'Annotation',
+                7 => 'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+                16 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                5 => 'DocParser',
+                7 => 'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+                16 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                5 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                16 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                5 => [
+                    $o[4],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[10],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                [
+                    $o[14],
+                ],
+                [
+                    $o[9],
+                ],
+                [
+                    $o[8],
+                ],
+            ],
+            'name' => [
+                4 => 'zip[]',
+                6 => 'problem',
+            ],
+            'in' => [
+                4 => 'formData',
+                6 => 'formData',
+            ],
+            'description' => [
+                4 => 'The problem archives to import',
+                6 => 'Optional: problem id to update.',
+                8 => 'Returns the IDs of the imported problems and any messages produced',
+                11 => 'The IDs of the imported problems',
+                15 => 'Messages produced while adding problems',
+            ],
+            'required' => [
+                4 => true,
+            ],
+            'type' => [
+                4 => 'file',
+                6 => 'string',
+                9 => 'object',
+                'array',
+                'integer',
+                14 => 'array',
+                'string',
+            ],
+            'response' => [
+                8 => '200',
+            ],
+            'schema' => [
+                8 => $o[9],
+            ],
+            'properties' => [
+                9 => [
+                    $o[10],
+                    $o[14],
+                ],
+            ],
+            'property' => [
+                10 => 'problem_ids',
+                14 => 'messages',
+            ],
+            'items' => [
+                10 => $o[11],
+                14 => $o[15],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[4],
+        $o[6],
+        $o[8],
+    ],
+    []
+); }];
