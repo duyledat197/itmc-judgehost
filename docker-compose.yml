@@ -3,13 +3,9 @@ version: '3'
 services:
   judgehost-1:
     image: domjudge/judgehost:latest
-    depends_on:
-      - mariadb
     env_file: .env
     ports:
       - "9091:80"
-    networks:
-      - domserver
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
@@ -17,8 +13,7 @@ services:
       - DAEMON_ID:1
   judgehost-2:
     image: domjudge/judgehost:latest
-    depends_on:
-      - mariadb
+
     env_file: .env
     ports:
       - "9092:80"
